@@ -1,26 +1,27 @@
 {
-  "name": "repair-design",
+  "name": "lesson-15",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Irishjimdegriz/repair-design.git"
+    "url": "git+https://github.com/Irishjimdegriz/lesson-15.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Irishjimdegriz/repair-design/issues"
+    "url": "https://github.com/Irishjimdegriz/lesson-15/issues"
   },
-  "homepage": "https://github.com/Irishjimdegriz/repair-design#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-cssmin": "^0.2.0"
-  },
-  "dependencies": {
-    "browser-sync": "^2.26.7"
-  }
+  "homepage": "https://github.com/Irishjimdegriz/lesson-15#readme"
 }
