@@ -524,16 +524,16 @@ body {
     display: none; }
   .title {
     font-size: 1.94rem;
-    line-height: 20pt;
-    max-width: 22.86rem;
-    margin-bottom: 1rem; }
+    line-height: 24pt;
+    max-width: 22.86rem; }
   .hero {
-    height: 50vh;
-    margin-top: 5.5rem;
+    height: auto;
+    margin-top: 5.2rem;
     justify-content: start; }
     .hero__container {
       margin: 0;
       margin-left: 20px;
+      padding-bottom: 2rem;
       width: 90%; }
     .hero__scroll-down {
       display: none; }
@@ -545,12 +545,12 @@ body {
       line-height: 18pt;
       min-width: 22.93rem;
       margin-right: 0;
-      margin-bottom: 2.28rem; }
+      margin-bottom: 2.8rem; }
     .hero__button {
       display: block;
       min-width: 22.86rem;
       width: 100%;
-      margin-bottom: 1.85rem; } }
+      margin-bottom: 2.5rem; } }
 
 @media screen and (max-width: 570px) and (max-height: 540px) {
   .hero__scroll-down {
