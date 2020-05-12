@@ -16,7 +16,7 @@
     &__scroll-down
       &:hover
         cursor: default
-  .button, .phone
+  .button, .phone, .logo
     &:hover
       cursor: default
 
@@ -30,18 +30,33 @@
     &__button
       display: none
   .title
-    font-size: 1.64rem
+    font-size: 1.94rem
+    line-height: 20pt
+    max-width: 22.86rem
+    margin-bottom: 1rem
   .hero
+    height: 50vh
+    margin-top: 5.5rem
+    justify-content: start
+    &__container
+      margin: 0
+      margin-left: 20px
+      width: 90%
     &__scroll-down
       display: none
     &__content
-      max-width: 22.86rem
+      min-width: 22.86rem
+      max-width: 100%
     &__text
-      font-size: 1.29rem
+      font-size: 1.6rem
+      line-height: 18pt
+      min-width: 22.93rem
+      margin-right: 0
       margin-bottom: 2.28rem
     &__button
       display: block
       min-width: 22.86rem
+      width: 100%
       margin-bottom: 1.85rem
 
   @media screen and ( max-height: 540px )

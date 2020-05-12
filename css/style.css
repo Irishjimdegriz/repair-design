@@ -341,7 +341,8 @@ template {
 .logo {
   color: #E3B873;
   font-size: 1.075rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
 
 .nav__item {
   color: #fff;
@@ -511,7 +512,7 @@ body {
     margin-left: 0; }
   .hero__scroll-down:hover {
     cursor: default; }
-  .button:hover, .phone:hover {
+  .button:hover, .phone:hover, .logo:hover {
     cursor: default; } }
 
 @media screen and (max-width: 570px) {
@@ -522,18 +523,34 @@ body {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 22.86rem; }
-  .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
-  .hero__button {
-    display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    font-size: 1.94rem;
+    line-height: 20pt;
+    max-width: 22.86rem;
+    margin-bottom: 1rem; }
+  .hero {
+    height: 50vh;
+    margin-top: 5.5rem;
+    justify-content: start; }
+    .hero__container {
+      margin: 0;
+      margin-left: 20px;
+      width: 90%; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      min-width: 22.86rem;
+      max-width: 100%; }
+    .hero__text {
+      font-size: 1.6rem;
+      line-height: 18pt;
+      min-width: 22.93rem;
+      margin-right: 0;
+      margin-bottom: 2.28rem; }
+    .hero__button {
+      display: block;
+      min-width: 22.86rem;
+      width: 100%;
+      margin-bottom: 1.85rem; } }
 
 @media screen and (max-width: 570px) and (max-height: 540px) {
   .hero__scroll-down {
