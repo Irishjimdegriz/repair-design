@@ -80,10 +80,10 @@
       font-size: 1.2rem !important
       max-width: 50rem !important
       line-height: 1.8rem !important
-  .section-title
-    &__heading
-      font-size: 1.8rem
-      color: $light
+      letter-spacing: 0.03rem
+    &__section-title>.section-title__heading
+        font-size: 1.8rem
+        color: $light
   .price-tag
     &--long
       padding-left: 3.6rem
@@ -91,6 +91,8 @@
   .card
     &__text
       padding-right: 0
+  .hidden
+    display: inline    
 
 
   @media screen and ( max-height: 540px )

@@ -607,6 +607,9 @@ img {
 .dots {
   display: none; }
 
+.hidden {
+  display: none; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -733,15 +736,18 @@ img {
       color: #fff !important;
       font-size: 1.2rem !important;
       max-width: 50rem !important;
-      line-height: 1.8rem !important; }
-  .section-title__heading {
-    font-size: 1.8rem;
-    color: #fff; }
+      line-height: 1.8rem !important;
+      letter-spacing: 0.03rem; }
+    .project__section-title > .section-title__heading {
+      font-size: 1.8rem;
+      color: #fff; }
   .price-tag--long {
     padding-left: 3.6rem;
     padding-right: 3.6rem; }
   .card__text {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .hidden {
+    display: inline; } }
 
 @media screen and (max-width: 570px) and (max-height: 540px) {
   .hero__scroll-down {
