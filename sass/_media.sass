@@ -20,6 +20,20 @@
     &:hover
       cursor: default
 
+@media screen and ( max-width: 760px)
+  .row
+    flex-direction: column
+    align-items: center
+  .types, .project
+    &__card
+      margin-bottom: 5rem
+  .card
+    &__text
+      margin-left: 0
+  .dots
+    display: inline !important
+  .extra-items
+    display: none 
 
 @media screen and ( max-width: 570px)
   .contacts
@@ -58,6 +72,26 @@
       min-width: 22.86rem
       width: 100%
       margin-bottom: 2.5rem
+  .project
+    background-color: $dark
+    padding-top: 2rem
+    &__description
+      color: $light !important
+      font-size: 1.2rem !important
+      max-width: 50rem !important
+      line-height: 1.8rem !important
+  .section-title
+    &__heading
+      font-size: 1.8rem
+      color: $light
+  .price-tag
+    &--long
+      padding-left: 3.6rem
+      padding-right: 3.6rem
+  .card
+    &__text
+      padding-right: 0
+
 
   @media screen and ( max-height: 540px )
     .hero

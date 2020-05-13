@@ -17,3 +17,70 @@
     border: 1px solid $light
     background-color: transparent
     color: $light
+.row
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+.col
+  flex-basis: 32%
+.card
+  &__text
+    position: relative
+    margin: 0 auto
+    margin-top: -9.3rem
+    padding: 1.79rem 2.14rem
+    max-width: 23.6rem
+    background-color: #fff
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+  &__title
+    font-family: 'Yeseva One', cursive
+    font-size: 1.29rem
+    margin-top: 0
+    margin-bottom: 0.7rem
+  &__list
+    margin: 0
+    padding: 0 0 0 1rem
+    font-size: 1.07rem
+    line-height: 1.79rem
+    color: $secondary
+    margin-bottom: 2.5rem
+  &__price-tag
+    position: absolute
+    left: 0
+    bottom: -1.79rem
+    font-size: 1.29rem
+    font-family: 'Yeseva One', cursive
+    text-transform: uppercase
+    color: #FFFFFF
+    background-color: $primary
+    padding: 1.214rem 2.6rem
+.label
+  &--light
+    color: rgba($light, 0.5)
+    font-size: 1.07rem
+.input
+  background-color: transparent
+  border: none
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+  font-size: 1.285rem
+  color: $light
+  padding: 0.5rem 0
+  &::placeholder
+    color: $light
+.policy
+  &__checkbox
+    opacity: 0
+    visibility: hidden
+    &:checked +
+      .policy__label::before
+        background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+  &__label
+    display: flex
+    align-items: center
+    &::before
+      content: ''
+      width: 18px
+      height: 18px
+      border: 1px solid $primary
+      border-radius: 1px
+      margin-right: 0.64rem
