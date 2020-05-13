@@ -1,4 +1,4 @@
-//прикручено к сайту
+//можно проверить на http://www.eugenezaznoba.ru/repair-design
 
 document.addEventListener('DOMContentLoaded', function(event) {
 const modal = document.querySelector('.modal');
