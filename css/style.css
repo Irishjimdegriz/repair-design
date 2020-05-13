@@ -652,9 +652,10 @@ img {
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
+    line-height: 2.1rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 1.728rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
@@ -665,7 +666,16 @@ img {
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 1.3rem 3.7rem; }
+  .modal__policy {
+    position: relative; }
+
+.policy__checkbox {
+  position: absolute; }
+
+.policy__label {
+  font-size: 1.15rem; }
 
 @media screen and (max-width: 1270px) {
   html {
