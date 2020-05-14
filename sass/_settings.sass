@@ -28,3 +28,33 @@ img
   &--long
     padding-left: 2.3rem
     padding-right: 5.9rem
+.scroll-up-container
+    display: none
+    position: fixed
+    right: 2rem
+    bottom: 2rem
+    min-width: 4rem
+    min-height: 4rem
+    z-index: 99
+    border: none
+    outline: none
+.scroll-up
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+    margin: 0
+    background-color: rgba($light, 0)
+    text-transform: uppercase
+    text-decoration: none
+    color: $light
+    &:before
+      content: ''
+      color: $primary
+      background: url('../img/arrow-down.svg') no-repeat center
+      width: 30px
+      height: 30px
+      border: 1px solid
+      border-radius: 50% 
+      transform: rotate(180deg)
