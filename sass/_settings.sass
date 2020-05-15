@@ -9,10 +9,32 @@ body
 img
   max-width: 100%
 .section
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
     text-align: center
-    text-transform: uppercase
-    font-family: 'Yeseva One', cursive
+    &--left
+      text-align: left
+    &__heading
+      text-transform: uppercase
+      font-family: 'Yeseva One', cursive
+          line-height: 138%
+      &--primary
+        color: $primary
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 92px
+        height: 1px
+        background-color: $primary
+        margin-left: 2rem
+    &__text
+      font-size: 1.28rem
+      line-height: 2.07rem
+      max-width: 31.57rem
     &__image
       display: flex
       justify-content: center
@@ -26,7 +48,7 @@ img
         margin: 0px 10px
 .price-tag
   &--long
-    padding-left: 2.3rem
+    padding-left: 2rem    
     padding-right: 5.9rem
 .scroll-up-container
     display: none

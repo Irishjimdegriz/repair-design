@@ -60,4 +60,27 @@ $(document).ready(function () {
         });
       } // End if
     });
+
+      //initialize swiper when document ready
+    let mySwiper = new Swiper ('.swiper-container', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+      swiping: {
+        noSwiping: true
+      }
+    })
+  
+    let next = $('.swiper-button-next');
+    let prev = $('.swiper-button-prev');
+    let bullets = $('.swiper-pagination');
+
+    next.css('left', prev.width() + 10 + bullets.width() + 20);
+    bullets.css('left', prev.width() + 20);
 });
