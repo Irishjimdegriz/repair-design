@@ -1,3 +1,6 @@
+  labels = ['Выезд на замер <br>помещения', 'Составление<br> сметы', 'Разработка<br>  дизайн проекта', 'Закупка расходных<br> материалов', 'Ремонтно-отделочные<br> работы', 'Приемка-сдача <br>работ'];
+
+
 $(document).ready(function () {
   const modal = $('.modal'),
         modalBtn = $('[data-toggle=modal]'),
@@ -62,7 +65,7 @@ $(document).ready(function () {
     });
 
       //initialize swiper when document ready
-    let mySwiper = new Swiper ('.swiper-container', {
+    let mySwiper = new Swiper ('.swiper-projects', {
       loop: true,
       navigation: {
         nextEl: '.swiper-button-next',
@@ -83,4 +86,51 @@ $(document).ready(function () {
 
     next.css('left', prev.width() + 10 + bullets.width() + 30);
     bullets.css('left', prev.width() + 20);
+
+    let swiper = new Swiper('.swiper-steps', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-steps-pagination',
+        type: 'bullets',
+      },
+      swiping: {
+        noSwiping: true
+      }
+    });
+
+    let nextStep = $('.swiper-steps-button-next');
+    let prevStep = $('.swiper-steps-button-prev');
+    let bulletsStep = $('.swiper-steps-pagination');
+
+    nextStep.css('left', prevStep.width() + 10 + bulletsStep.width() + 30);
+    bulletsStep.css('left', prevStep.width() + 20);
+
+    let swiperStepsRight = new Swiper('.swiper-steps-right', {
+      loop: true,
+      pagination: {
+        el: '.swiper-steps-right-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<div class="${className} swiper-custom-bullet"><p class="slide-number">0${index}</p>${(labels[index])}</div>`;
+          //return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+      swiping: {
+        noSwiping: true
+      }
+    });
+
+    swiper.on('slideChange', (event) => {
+      //if (swiperStepsRight.activeIndex != swiper.activeIndex)
+        swiperStepsRight.slideTo(swiper.activeIndex, 200, runCallbacks=false);
+    });
+
+    swiperStepsRight.on('slideChange', (event) => {
+      //if (swiper.activeIndex != swiperStepsRight.activeIndex)
+        swiper.slideTo(swiperStepsRight.activeIndex, 200, runCallbacks=false);
+    });
 });
