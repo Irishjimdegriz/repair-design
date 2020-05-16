@@ -733,7 +733,9 @@ img {
   margin-bottom: 2rem; }
 
 .project {
-  margin-bottom: 4rem; }
+  padding-bottom: 30rem;
+  margin-bottom: 4rem;
+  position: relative; }
   .project__section-title {
     margin-top: 3.5rem; }
   .project__description {
@@ -751,6 +753,11 @@ img {
     margin-bottom: 0.63rem; }
   .project__card-list {
     margin-left: 0.3rem; }
+  .project__row {
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .dots {
   display: none; }
@@ -828,15 +835,16 @@ img {
   font-size: 1.15rem; }
 
 .steps {
-  padding-top: 30rem;
+  padding-top: 13rem;
   padding-bottom: 5rem; }
   .steps > .container {
-    width: 86.2%; }
+    width: 86.7%; }
   .steps__col-left {
-    width: 37.5%; }
+    width: 30%; }
   .steps__col-right {
-    width: 64%;
-    padding-top: 7.5rem; }
+    width: 70%;
+    padding-left: 6.1rem;
+    padding-top: 6.1rem; }
   .steps__subtitle {
     margin-bottom: -0.4rem; }
   .steps__section-title {
@@ -875,26 +883,43 @@ img {
   .swiper-steps-slide__value--first {
     margin-bottom: 0.5rem; }
 
-.swiper-steps-right {
+.swiper-steps-right-pagination {
+  top: 2px;
+  left: 5rem;
+  left: 0px;
   display: flex;
-  flex-direction: column; }
-  .swiper-steps-right-pagination {
-    top: 2px;
-    width: 100%;
-    left: 0; }
-  .swiper-steps-right-wrapper {
-    top: 12rem; }
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content; }
+
+.swiper-steps-right-wrapper {
+  padding-top: 17.2rem; }
 
 .swiper-image-right {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  height: 100%; }
 
 .swiper-custom-bullet {
   background-color: transparent;
   width: 25%;
   color: #fff;
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 7rem !important; }
+
+.slide-number {
+  border-bottom: 1px solid #E3B873;
+  margin-bottom: 0.65rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: 'Yeseva One', cursive; }
+
+.bullet-text {
+  font-size: 1.1rem; }
 
 @media screen and (max-width: 1600px) {
   .col-40 {
@@ -904,7 +929,11 @@ img {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .steps__col-left {
+    width: 40%; }
+  .steps__col-right {
+    width: 60%; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -916,7 +945,11 @@ img {
   .hero__scroll-down:hover {
     cursor: default; }
   .button:hover, .phone:hover, .logo:hover {
-    cursor: default; } }
+    cursor: default; }
+  .steps {
+    display: none; }
+  .project {
+    padding-bottom: 50rem; } }
 
 @media screen and (max-width: 760px) {
   .row {

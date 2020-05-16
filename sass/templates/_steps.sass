@@ -1,14 +1,17 @@
 .steps
-  padding-top: 30rem
+  padding-top: 13rem
   padding-bottom: 5rem
   &>.container
-    width: 86.2%
+    width: 86.7%
+  &__row
+    //padding: 0
   &__col
     &-left
-      width: 37.5%
+      width: 30%
     &-right
-      width: 64%
-      padding-top: 7.5rem
+      width: 70%
+      padding-left: 6.1rem
+      padding-top: 6.1rem
   &__subtitle
     margin-bottom: -0.4rem
   &__section-title
@@ -47,21 +50,35 @@
         &--first
           margin-bottom: 0.5rem
   &-steps-right
-    display: flex
-    flex-direction: column
+    //margin-left: 5rem
     &-pagination
       top: 2px
-      width: 100%
-      left: 0
+      left: 5rem
+      left: 0px
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: flex-start
+      height: fit-content
     &-wrapper
-      top: 12rem
+      padding-top: 17.2rem
   &-image
     &-right
       display: block
       margin-left: auto
       margin-right: auto
+      height: 100%
   &-custom-bullet
     background-color: transparent
     width: 25%
     color: $light 
     text-align: left
+    margin-bottom: 7rem !important
+.slide-number
+  border-bottom: 1px solid $primary
+  margin-bottom: 0.65rem
+  display: inline-block
+  font-size: 1.2rem
+  font-family: 'Yeseva One', cursive
+.bullet-text
+  font-size: 1.1rem

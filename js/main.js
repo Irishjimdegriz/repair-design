@@ -99,6 +99,11 @@ $(document).ready(function () {
       },
       swiping: {
         noSwiping: true
+      },
+      breakpoints: {
+        1260: {
+          spaceBetween: 0
+        }
       }
     });
 
@@ -115,7 +120,7 @@ $(document).ready(function () {
         el: '.swiper-steps-right-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-          return `<div class="${className} swiper-custom-bullet"><p class="slide-number">0${index}</p>${(labels[index])}</div>`;
+          return `<div class="${className} swiper-custom-bullet"><p class="slide-number">0${index + 1}</p><br><div class="bullet-text">${(labels[index])}</div></div>`;
           //return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
       },
@@ -133,4 +138,11 @@ $(document).ready(function () {
       //if (swiper.activeIndex != swiperStepsRight.activeIndex)
         swiper.slideTo(swiperStepsRight.activeIndex, 200, runCallbacks=false);
     });
+
+    $('.swiper-steps-right-pagination').width = $('.swiper-steps-right').width;
+    $('.swiper-steps-right-pagination').css('left', 0);
+
+    if(window.matchMedia('(max-width: 1270px)').matches){
+      swiper.pagination.dynamicBullets = true;
+    }
 });
