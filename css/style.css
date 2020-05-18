@@ -852,7 +852,7 @@ img {
     margin-bottom: 6.1rem; }
 
 .section-title__subtitle {
-  font-family: 'FuturaDemiC';
+  font-family: 'Futura Demi';
   font-size: 1.02rem;
   text-transform: uppercase; }
 
@@ -939,7 +939,11 @@ img {
   .steps__col-left {
     width: 40%; }
   .steps__col-right {
-    width: 60%; } }
+    width: 60%; }
+  .swiper-slide__text:nth-of-type(2n-1) {
+    margin-right: 2rem; }
+  .swiper-slide__heading {
+    font-size: 1.1rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -963,6 +967,9 @@ img {
     align-items: center; }
   .col-40, .col-60 {
     width: 100%; }
+  .col--padding {
+    padding-left: 2rem;
+    padding-right: 2rem; }
   .types__card, .project__card {
     margin-bottom: 5rem; }
   .card__text {
@@ -1020,18 +1027,21 @@ img {
     .project__section-title > .section-title__heading {
       font-size: 1.8rem;
       color: #fff; }
+  .types__section-title {
+    font-size: 1.2rem;
+    margin-bottom: 3.4rem; }
   .price-tag--long {
     padding-left: 3.6rem;
     padding-right: 4.5rem;
     padding-bottom: 0.9rem;
     bottom: -1.42rem; }
   .card__text {
-    padding-right: 0;
-    margin-top: -12.1rem;
     max-width: 22.8rem;
+    margin-top: -13.1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.6rem;
-    padding-left: 2.5rem; }
+    padding-left: 2.9rem;
+    padding-right: 0; }
   .card__list {
     padding-left: 0.1rem;
     margin-left: 1.2rem; }
@@ -1039,6 +1049,10 @@ img {
     margin-bottom: 0.77rem; }
   .card__item {
     margin-top: 0.06rem; }
+  .card__price-tag {
+    bottom: -1.1rem;
+    padding: 0.9rem 2.5rem;
+    left: 0.5rem; }
   .project__container {
     width: 95%; }
   .project__description {
@@ -1049,6 +1063,8 @@ img {
     padding-left: 2%; }
   .project__card {
     margin-bottom: 6.2rem; }
+  .col-30 {
+    margin-bottom: 1.3rem; }
   .col-40, .col-60 {
     width: 100%; }
   .col-40 {
