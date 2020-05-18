@@ -456,7 +456,8 @@ template {
   width: 60%; }
 
 .col--padding {
-  padding-top: 1.5rem; }
+  padding-top: 1.5rem;
+  padding-left: 4rem; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -1045,6 +1046,8 @@ img {
     margin-bottom: 6.2rem; }
   .col-40, .col-60 {
     width: 100%; }
+  .col-40 {
+    padding-bottom: 0; }
   .projects > .container {
     width: 90%; }
   .section-title__word::after {
@@ -1078,13 +1081,9 @@ img {
     margin-bottom: 0.8rem; }
   .swiper-image {
     max-width: 100%;
-    height: auto;
-    -o-object-fit: contain;
-    object-fit: contain; }
+    height: 17rem; }
   .col-60 {
     margin-top: 1.1rem; }
-    .col-60 > .swiper-container {
-      margin-bottom: 5rem; }
   .steps {
     display: none; } }
 
