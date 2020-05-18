@@ -1030,11 +1030,6 @@ img {
   .types__section-title {
     font-size: 1.2rem;
     margin-bottom: 3.4rem; }
-  .price-tag--long {
-    padding-left: 3.6rem;
-    padding-right: 4.5rem;
-    padding-bottom: 0.9rem;
-    bottom: -1.42rem; }
   .card__text {
     max-width: 22.8rem;
     margin-top: -13.1rem;
@@ -1053,16 +1048,26 @@ img {
     bottom: -1.1rem;
     padding: 0.9rem 2.5rem;
     left: 0.5rem; }
+  .price-tag--long {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 0.9rem;
+    bottom: -1.12rem;
+    left: -0.2rem; }
   .project__container {
     width: 95%; }
   .project__description {
-    width: 87%; }
+    width: 79.5%; }
   .project__row {
-    width: 98%;
-    margin: 0;
-    padding-left: 2%; }
+    width: 83%;
+    margin: 0; }
   .project__card {
     margin-bottom: 6.2rem; }
+  .project-card__text {
+    margin-top: -12.6rem;
+    padding-left: 2.4rem; }
+  .project__col {
+    margin-bottom: 0 !important; }
   .col-30 {
     margin-bottom: 1.3rem; }
   .col-40, .col-60 {
