@@ -892,6 +892,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100% !important;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content; }
@@ -907,10 +908,14 @@ img {
 
 .swiper-custom-bullet {
   background-color: transparent;
-  width: 25%;
+  flex-basis: 25%;
   color: #fff;
   text-align: left;
   margin-bottom: 7rem !important; }
+  .swiper-custom-bullet:nth-of-type(3n-1) {
+    padding-left: 2.9rem !important; }
+  .swiper-custom-bullet:nth-of-type(3n) {
+    padding-left: 6.2rem !important; }
 
 .slide-number {
   border-bottom: 1px solid #E3B873;

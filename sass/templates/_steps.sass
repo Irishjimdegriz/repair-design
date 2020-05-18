@@ -59,6 +59,7 @@
       flex-wrap: wrap
       justify-content: space-between
       align-items: flex-start
+      width: 100% !important
       height: fit-content
     &-wrapper
       padding-top: 17.2rem
@@ -70,10 +71,16 @@
       height: 100%
   &-custom-bullet
     background-color: transparent
-    width: 25%
+    flex-basis: 25%
+    //width: 25%
     color: $light 
     text-align: left
     margin-bottom: 7rem !important
+    &:nth-of-type(3n-1)
+      padding-left: 2.9rem !important
+    &:nth-of-type(3n)
+      padding-left: 6.2rem !important
+      
 .slide-number
   border-bottom: 1px solid $primary
   margin-bottom: 0.65rem
