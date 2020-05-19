@@ -145,4 +145,11 @@ $(document).ready(function () {
     if(window.matchMedia('(max-width: 1270px)').matches){
       swiper.pagination.dynamicBullets = true;
     }
+
+    var mql = window.matchMedia('all and (max-width: 570px)');
+    if (mql.matches) {
+        // размер окна 479px или меньше
+    } else {
+        // нет, размер окна более 479px 
+    }
 });
