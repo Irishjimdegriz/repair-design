@@ -61,6 +61,8 @@
     display: inline !important
   .extra-items
     display: none 
+  .project
+    padding-bottom: 121rem
 
 @media screen and ( max-width: 570px)
   .contacts
@@ -102,6 +104,8 @@
   .project
     background-color: $dark
     padding-top: 2rem
+    padding-bottom: 145rem
+    margin-bottom: 0
     &__description
       color: $light !important
       font-size: 1.2rem !important
@@ -195,6 +199,8 @@
         flex-basis: 49%
         line-height: 1.7rem
         font-size: 1.1rem
+        &:nth-of-type(2n-1)
+          margin-right: 0
       &__heading
         font-size: 1.2rem
         font-weight: bold
@@ -210,13 +216,24 @@
     // &>.swiper-container
     //   margin-bottom: 5rem
   .steps
-    display: none
-    
+    display: none         
 
+@media screen and ( max-width: 470px)
+  .swiper
+    &-slide
+      &__text
+        &:nth-of-type(2n)
+          padding-left: 2rem
 
+@media screen and ( max-width: 435px)
+  .swiper
+    &-slide
+      &__text
+        &:nth-of-type(2n)
+          padding-left: 0rem
 
-  @media screen and ( max-height: 540px )
-    .hero
-      &__scroll-down
-        display: none
+@media screen and ( max-height: 540px )
+  .hero
+    &__scroll-down
+      display: none
     

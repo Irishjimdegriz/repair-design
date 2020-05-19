@@ -977,7 +977,9 @@ img {
   .dots {
     display: inline !important; }
   .extra-items {
-    display: none; } }
+    display: none; }
+  .project {
+    padding-bottom: 121rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1017,7 +1019,9 @@ img {
       margin-bottom: 2.5rem; }
   .project {
     background-color: #131313;
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    padding-bottom: 145rem;
+    margin-bottom: 0; }
     .project__description {
       color: #fff !important;
       font-size: 1.2rem !important;
@@ -1100,6 +1104,8 @@ img {
     flex-basis: 49%;
     line-height: 1.7rem;
     font-size: 1.1rem; }
+    .swiper-slide__text:nth-of-type(2n-1) {
+      margin-right: 0; }
   .swiper-slide__heading {
     font-size: 1.2rem;
     font-weight: bold;
@@ -1113,6 +1119,14 @@ img {
   .steps {
     display: none; } }
 
-@media screen and (max-width: 570px) and (max-height: 540px) {
+@media screen and (max-width: 470px) {
+  .swiper-slide__text:nth-of-type(2n) {
+    padding-left: 2rem; } }
+
+@media screen and (max-width: 435px) {
+  .swiper-slide__text:nth-of-type(2n) {
+    padding-left: 0rem; } }
+
+@media screen and (max-height: 540px) {
   .hero__scroll-down {
     display: none; } }
