@@ -146,10 +146,29 @@ $(document).ready(function () {
       swiper.pagination.dynamicBullets = true;
     }
 
-    var mql = window.matchMedia('all and (max-width: 570px)');
-    if (mql.matches) {
-        // размер окна 479px или меньше
-    } else {
-        // нет, размер окна более 479px 
+    //new WOW().init();
+    const $window = $(window);
+    $(window).on('scroll', animateVisibleElements);
+
+    $(window).trigger('scroll');
+
+    function animateVisibleElements() {
+      let elements = $('.animate');
+      elements.forEach(function(item) {
+        if (isScrolledIntoView(item))
+          item.addClass('.bounce');
+      });
+    }
+
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     }
 });
+
+

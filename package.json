@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "gulp-sass": "^4.1.0"
+    "animate.css": "^4.1.0",
+    "gulp-sass": "^4.1.0",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
