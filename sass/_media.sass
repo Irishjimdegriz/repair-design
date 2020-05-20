@@ -119,6 +119,7 @@
     &__section-title
       font-size: 1.2rem
       margin-bottom: 3.4rem
+      margin-top: 6.3rem
   .card
     &__text
       max-width: 22.8rem
@@ -219,7 +220,54 @@
     // &>.swiper-container
     //   margin-bottom: 5rem
   .steps
-    display: none         
+    display: none
+  .control
+    background-color: $dark
+    color: $light
+    &>.container
+      width: 93%
+    &__section-title
+      &__heading
+        font-size: 1.8rem  
+      &-image
+        margin-bottom: 3.4rem
+    &__video
+      min-height: 17.2rem  
+      margin-bottom: 2.4rem
+    &__text
+      font-size: 1.15rem
+      line-height: 2rem
+      margin-bottom: 2.1rem
+      &::before
+        margin-bottom: 1.3rem
+    &__input-group
+      flex-basis: 100%
+      order: 2
+      &:first-of-type
+        margin-bottom: 4.9rem
+        order: 1
+    &__button
+      position: absolute
+      padding: 1.486rem 11.3rem;
+      margin-left: 0.4rem
+      bottom: -1.5rem
+      order: 4
+    &__policy
+      order: 3
+      margin-top: 1rem
+      margin-bottom: 2.4rem
+      &-label
+        justify-content: flex-start
+        font-size: 1.35rem
+        margin-bottom: 5.5rem
+    &__label
+      margin-bottom: 2px
+      font-size: 1.2rem
+    &__input
+      font-size: 1.5rem
+      margin-top: -0.2rem
+    &__form
+      position: relative
 
 @media screen and ( max-width: 470px)
   .swiper
