@@ -1260,48 +1260,24 @@ img {
   .hero__scroll-down {
     display: none; } }
 
-@-webkit-keyframes bnc {
+@-webkit-keyframes slidein {
   from {
-    font-size: 100px;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  25% {
-    top: 50px;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  50% {
-    top: 100px;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  75% {
-    top: 75px;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
+    margin-left: 100%;
+    width: 300%; }
   to {
-    top: 100px; } }
+    margin-left: 0%;
+    width: 100%; } }
 
-@keyframes bnc {
+@keyframes slidein {
   from {
-    font-size: 100px;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  25% {
-    top: 50px;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  50% {
-    top: 100px;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  75% {
-    top: 75px;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
+    margin-left: 100%;
+    width: 300%; }
   to {
-    top: 100px; } }
+    margin-left: 0%;
+    width: 100%; } }
 
-.bounce {
-  -webkit-animation-name: bnc;
-  animation-name: bnc;
+.slidein {
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
   -webkit-animation-duration: 1s;
   animation-duration: 1s; }

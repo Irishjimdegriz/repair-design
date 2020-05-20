@@ -147,28 +147,32 @@ $(document).ready(function () {
     }
 
     //new WOW().init();
-    const $window = $(window);
-    $(window).on('scroll', animateVisibleElements);
-
-    $(window).trigger('scroll');
-
-    function animateVisibleElements() {
-      let elements = $('.animate');
-      elements.forEach(function(item) {
-        if (isScrolledIntoView(item))
-          item.addClass('.bounce');
+    var $animation_elements = $('.animate');
+    var $window = $(window);
+    
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+     
+      $.each($animation_elements, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+     
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+          $element.addClass('slidein');
+        } else {
+          $element.removeClass('slidein');
+        }
       });
     }
-
-    function isScrolledIntoView(elem) {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-
-        var elemTop = $(elem).offset().top;
-        var elemBottom = elemTop + $(elem).height();
-
-        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-    }
+    
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
 });
 
 
