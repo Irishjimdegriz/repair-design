@@ -1053,7 +1053,10 @@ img {
   .extra-items {
     display: none; }
   .project {
-    padding-bottom: 121rem; } }
+    padding-bottom: 121rem; }
+  .video__play {
+    width: 7.5rem;
+    height: 7.5rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1240,7 +1243,10 @@ img {
       font-size: 1.5rem;
       margin-top: -0.2rem; }
     .control__form {
-      position: relative; } }
+      position: relative; }
+    .control .video__play {
+      width: 5rem;
+      height: 5rem; } }
 
 @media screen and (max-width: 470px) {
   .swiper-slide__text:nth-of-type(2n) {
