@@ -397,6 +397,8 @@ template {
     border: 1px solid #E3B873;
     border-radius: 1px;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 .header {
   position: fixed;
@@ -1001,6 +1003,58 @@ img {
 .bullet-text {
   font-size: 1.1rem; }
 
+.footer-wrap {
+  background-color: #181818;
+  position: relative;
+  max-width: 63.07rem;
+  margin: auto;
+  top: -16rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer__title {
+  text-transform: uppercase;
+  font-family: "Yeseva One", cursive;
+  font-weight: normal;
+  font-size: 1.428rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 3.214rem; }
+
+.footer__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 37rem; }
+
+.footer__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 44%;
+  margin-bottom: 3.3rem; }
+  .footer__input-group--full-width {
+    flex-basis: 100%; }
+
+.footer__policy {
+  flex-basis: 100%;
+  margin-bottom: 3.8rem; }
+  .footer__policy-label {
+    margin-top: 0;
+    font-size: 1.142rem; }
+
+.footer__button {
+  margin: auto;
+  padding: 1.3rem 4.8rem; }
+
+.footer__input {
+  padding-top: 0.2rem; }
+
+.clients {
+  margin-top: 30rem;
+  padding-bottom: 30rem; }
+
 @media screen and (max-width: 1600px) {
   .col-40 {
     padding-bottom: 4rem; } }
@@ -1246,7 +1300,33 @@ img {
       position: relative; }
     .control .video__play {
       width: 5rem;
-      height: 5rem; } }
+      height: 5rem; }
+  .clients {
+    display: none; }
+  .footer {
+    background-color: #131313; }
+    .footer > .container {
+      width: 90%; }
+    .footer-wrap {
+      padding: 0;
+      background-color: #131313; }
+    .footer__title {
+      font-size: 1.688rem;
+      margin-bottom: 4.5rem; }
+    .footer__input-group {
+      flex-basis: 100%;
+      margin-bottom: 5.2rem; }
+    .footer__label {
+      font-size: 1.2rem; }
+    .footer__input {
+      font-size: 1.5rem; }
+    .footer__policy {
+      margin-top: -3.3rem;
+      margin-bottom: 5.6rem; }
+    .footer__button {
+      width: 100%;
+      padding: 1.4rem 4.8rem;
+      font-size: 1.3rem; } }
 
 @media screen and (max-width: 470px) {
   .swiper-slide__text:nth-of-type(2n) {

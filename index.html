@@ -521,7 +521,46 @@
       <!-- /.container -->
     </section>
     <!-- /.section steps -->
+    <section class="section clients">
+      <div class="container">
+        <div class="section-title control__section-title">
+          <h2 class="section-title__heading control__section-title__heading">Наши клиенты</h2>
+          <!-- /.section-title__heading -->
+          <div class="section-title__image control__section-title-image">
+            <img src="img/web-camera.svg" alt="camera">
+          </div>
+          <!-- /.section-title__image -->
+        </div>
+      </div>
+    </section>
+    <!-- /.section clients -->
   </main>
+  <footer class="footer section section--dark">
+    <div class="container">
+      <div class="footer-wrap">
+        <h3 class="footer__title">Остались вопросы?</h3>
+        <form action="#" class="form footer__form">
+          <div class="input-group footer__input-group">
+            <label for="user-name" class="label form__label footer__label label--light">Имя</label>
+            <input type="text" class="input form__input footer__input input--light" id="user-name" placeholder='Как вас зовут:'>
+          </div>
+          <div class="input-group footer__input-group">
+            <label for="user-phone" class="label form__label footer__label label--light">Телефон</label>
+            <input type="tel" class="input form__input footer__input input--light" id="user-phone" placeholder='Ваш номер телефона:'>
+          </div>
+          <div class="input-group footer__input-group footer__input-group--full-width">
+            <label for="user-question" class="label form__label footer__label label--light">Вопрос</label>
+            <input type="text" class="input form__input footer__input input--light" id="user-question" placeholder='Я хочу спросить:'>  
+          </div>    
+          <div class="policy footer__policy policy--center">
+            <input type="checkbox" name='policy-checkbox' id='policy-checkbox' class='policy__checkbox' checked>
+            <label for="policy-checkbox" class='policy__label footer__policy-label policy__label--center'>Я соглашаюсь с обработкой данных</label>
+          </div>
+          <button class="button button--primary footer__button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </footer>
   <div class='modal'>
     <div class='modal__dialog'>
       <button class="modal__close"></button>
