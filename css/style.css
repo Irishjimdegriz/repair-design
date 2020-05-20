@@ -831,7 +831,7 @@ img {
     margin-left: 0.3rem; }
   .project__row {
     position: absolute;
-    width: 85%;
+    width: 60%;
     left: 50%;
     transform: translateX(-50%); }
 
@@ -1052,8 +1052,93 @@ img {
   padding-top: 0.2rem; }
 
 .clients {
-  margin-top: 30rem;
+  margin-top: 60rem;
   padding-bottom: 30rem; }
+
+.team {
+  margin-top: -8.4rem;
+  position: relative;
+  padding-bottom: 15rem; }
+  .team__description {
+    margin: auto;
+    margin-bottom: 5.286rem;
+    font-family: "Futura Book", sans-serif;
+    font-size: 1.428rem;
+    line-height: 1.929rem;
+    max-width: 32rem;
+    text-align: center; }
+  .team__profile-wrap {
+    position: absolute;
+    width: 53%;
+    left: 50%;
+    margin-left: -26.5%; }
+  .team__profile {
+    flex-basis: 27%;
+    max-width: 19.429rem;
+    position: relative; }
+  .team__postscriptum {
+    margin: auto;
+    margin-top: 10rem;
+    color: #131313;
+    max-width: 40.571rem;
+    text-align: center; }
+    .team__postscriptum::before {
+      content: '';
+      width: 92px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 2rem; }
+
+.profile__logo-wrap {
+  background-color: #E3B873;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  top: -2.5rem;
+  left: -2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card-wrap {
+  display: flex;
+  justify-content: space-around; }
+
+.title {
+  position: absolute;
+  bottom: -4.5rem;
+  left: 2rem; }
+  .title-wrap--light {
+    background-color: #fff;
+    color: #131313;
+    margin: 0; }
+  .title-wrap--primary {
+    background-color: #E3B873;
+    color: #fff;
+    margin: 0; }
+  .title__name {
+    font-family: "Yeseva One", cursive;
+    font-size: 1.428rem;
+    line-height: 1.929rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 1.571rem;
+    margin-bottom: 0.643rem; }
+  .title__job {
+    font-family: "Futura Book", sans-serif;
+    font-size: 1.286rem;
+    line-height: 1.857rem;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1.714rem; }
+  .title__experience {
+    margin: 0;
+    padding: 0.929rem 1.643rem;
+    font-family: "Yeseva One", cursive;
+    font-size: 0.929rem;
+    line-height: 1.429rem;
+    text-align: center;
+    text-transform: uppercase; }
 
 @media screen and (max-width: 1600px) {
   .col-40 {
