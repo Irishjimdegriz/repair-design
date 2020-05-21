@@ -2,6 +2,26 @@
   .col-40
     padding-bottom: 4rem
 
+@media screen and ( max-width: 1480px)
+  .title
+    &__name
+      padding-top: 1.171rem
+      font-size: 1.15rem
+    &__experience
+      font-size: 0.75rem
+    &__job
+      font-size: 1.05rem
+    
+@media screen and ( max-width: 1305px)
+  .title
+    &__name
+      font-size: 1.1rem
+    &__experience
+      font-size: 0.7rem      
+    &__job
+      font-size: 1.0rem
+      padding-bottom: 1.5rem
+
 @media screen and ( max-width: 1270px)
   html
     font-size: 12px
@@ -21,6 +41,93 @@
           margin-right: 2rem
       &__heading
         font-size: 1.1rem
+
+@media screen and ( max-width: 1130px)
+  .title
+    &__name
+      padding-top: 1.05rem
+    &__experience
+      font-size: 0.7rem      
+    &__job
+      font-size: 1.0rem
+      padding-bottom: 1.4rem
+
+@media screen and ( max-width: 1080px)
+  .team
+    &__section-title-heading
+      font-size: 1.8rem
+      margin-bottom: 1rem
+    &__description
+      max-width: 27rem
+      font-size: 1.228rem
+      margin-bottom: 6.6rem
+    &__profile-wrap
+      position: static
+      left: 0
+      width: 100%
+      margin-left: 0
+    &__profile
+      position: relative
+      margin-left: 3rem
+      margin-bottom: 12.3rem
+      max-width: 25rem
+    &__postscriptum
+      display: none
+  .card-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+  .title
+    &__name
+      font-size: 1.528rem
+      line-height: 1.929rem
+      padding-top: 1.65rem
+    &__experience
+      margin-bottom: -0.9rem
+      font-size: 1.1rem
+      line-height: 1.857rem
+    &__job
+      font-size: 1.529rem
+      line-height: 1.429rem
+      padding-top: 0.5rem
+      padding-bottom: 2.3rem
+  .profile
+    &__logo-wrap
+      width: 6rem
+      height: 6rem
+      top: -3rem
+      left: -3rem
+    &__title
+      width: calc(100% - 5.8rem)
+      margin: 0 2.9rem
+      bottom: -3.7rem
+  .clients
+    display: none
+  .footer
+    background-color: $dark
+    &>.container
+      width: 90%
+    &-wrap
+      padding: 0
+      background-color: $dark
+    &__title
+      font-size: 1.688rem
+      margin-bottom: 4.5rem
+    &__input-group
+      flex-basis: 100%
+      margin-bottom: 5.2rem
+    &__label
+      font-size: 1.2rem
+    &__input
+      font-size: 1.5rem
+    &__policy
+      margin-top: -3.3rem
+      margin-bottom: 5.6rem
+    &__button
+      width: 100%
+      padding: 1.4rem 4.8rem
+      font-size: 1.3rem
 
 @media screen and ( max-width: 992px)
   .nav
@@ -252,7 +359,7 @@
         order: 1
     &__button
       position: absolute
-      padding: 1.486rem 11.3rem;
+      padding: 1.486rem 11.3rem
       margin-left: 0.4rem
       bottom: -1.5rem
       order: 4
@@ -276,32 +383,6 @@
       &__play
         width: 5rem
         height: 5rem
-  .clients
-    display: none
-  .footer
-    background-color: $dark
-    &>.container
-      width: 90%
-    &-wrap
-      padding: 0
-      background-color: $dark
-    &__title
-      font-size: 1.688rem
-      margin-bottom: 4.5rem
-    &__input-group
-      flex-basis: 100%
-      margin-bottom: 5.2rem
-    &__label
-      font-size: 1.2rem
-    &__input
-      font-size: 1.5rem
-    &__policy
-      margin-top: -3.3rem
-      margin-bottom: 5.6rem
-    &__button
-      width: 100%
-      padding: 1.4rem 4.8rem
-      font-size: 1.3rem
 
 @media screen and ( max-width: 470px)
   .swiper

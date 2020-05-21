@@ -1164,6 +1164,24 @@ img {
   .col-40 {
     padding-bottom: 4rem; } }
 
+@media screen and (max-width: 1480px) {
+  .title__name {
+    padding-top: 1.171rem;
+    font-size: 1.15rem; }
+  .title__experience {
+    font-size: 0.75rem; }
+  .title__job {
+    font-size: 1.05rem; } }
+
+@media screen and (max-width: 1305px) {
+  .title__name {
+    font-size: 1.1rem; }
+  .title__experience {
+    font-size: 0.7rem; }
+  .title__job {
+    font-size: 1.0rem;
+    padding-bottom: 1.5rem; } }
+
 @media screen and (max-width: 1270px) {
   html {
     font-size: 12px; }
@@ -1177,6 +1195,89 @@ img {
     margin-right: 2rem; }
   .swiper-slide__heading {
     font-size: 1.1rem; } }
+
+@media screen and (max-width: 1130px) {
+  .title__name {
+    padding-top: 1.05rem; }
+  .title__experience {
+    font-size: 0.7rem; }
+  .title__job {
+    font-size: 1.0rem;
+    padding-bottom: 1.4rem; } }
+
+@media screen and (max-width: 1080px) {
+  .team__section-title-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem; }
+  .team__description {
+    max-width: 27rem;
+    font-size: 1.228rem;
+    margin-bottom: 6.6rem; }
+  .team__profile-wrap {
+    position: static;
+    left: 0;
+    width: 100%;
+    margin-left: 0; }
+  .team__profile {
+    position: relative;
+    margin-left: 3rem;
+    margin-bottom: 12.3rem;
+    max-width: 25rem; }
+  .team__postscriptum {
+    display: none; }
+  .card-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .title__name {
+    font-size: 1.528rem;
+    line-height: 1.929rem;
+    padding-top: 1.65rem; }
+  .title__experience {
+    margin-bottom: -0.9rem;
+    font-size: 1.1rem;
+    line-height: 1.857rem; }
+  .title__job {
+    font-size: 1.529rem;
+    line-height: 1.429rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2.3rem; }
+  .profile__logo-wrap {
+    width: 6rem;
+    height: 6rem;
+    top: -3rem;
+    left: -3rem; }
+  .profile__title {
+    width: calc(100% - 5.8rem);
+    margin: 0 2.9rem;
+    bottom: -3.7rem; }
+  .clients {
+    display: none; }
+  .footer {
+    background-color: #131313; }
+    .footer > .container {
+      width: 90%; }
+    .footer-wrap {
+      padding: 0;
+      background-color: #131313; }
+    .footer__title {
+      font-size: 1.688rem;
+      margin-bottom: 4.5rem; }
+    .footer__input-group {
+      flex-basis: 100%;
+      margin-bottom: 5.2rem; }
+    .footer__label {
+      font-size: 1.2rem; }
+    .footer__input {
+      font-size: 1.5rem; }
+    .footer__policy {
+      margin-top: -3.3rem;
+      margin-bottom: 5.6rem; }
+    .footer__button {
+      width: 100%;
+      padding: 1.4rem 4.8rem;
+      font-size: 1.3rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -1405,33 +1506,7 @@ img {
       position: relative; }
     .control .video__play {
       width: 5rem;
-      height: 5rem; }
-  .clients {
-    display: none; }
-  .footer {
-    background-color: #131313; }
-    .footer > .container {
-      width: 90%; }
-    .footer-wrap {
-      padding: 0;
-      background-color: #131313; }
-    .footer__title {
-      font-size: 1.688rem;
-      margin-bottom: 4.5rem; }
-    .footer__input-group {
-      flex-basis: 100%;
-      margin-bottom: 5.2rem; }
-    .footer__label {
-      font-size: 1.2rem; }
-    .footer__input {
-      font-size: 1.5rem; }
-    .footer__policy {
-      margin-top: -3.3rem;
-      margin-bottom: 5.6rem; }
-    .footer__button {
-      width: 100%;
-      padding: 1.4rem 4.8rem;
-      font-size: 1.3rem; } }
+      height: 5rem; } }
 
 @media screen and (max-width: 470px) {
   .swiper-slide__text:nth-of-type(2n) {
