@@ -1304,7 +1304,9 @@ img {
   .title__experience {
     font-size: 0.75rem; }
   .title__job {
-    font-size: 1.05rem; } }
+    font-size: 1.05rem; }
+  .break {
+    display: none; } }
 
 @media screen and (max-width: 1305px) {
   .title__name {
@@ -1313,7 +1315,9 @@ img {
     font-size: 0.7rem; }
   .title__job {
     font-size: 1.0rem;
-    padding-bottom: 1.5rem; } }
+    padding-bottom: 1.5rem; }
+  .footer__map {
+    min-height: 20rem; } }
 
 @media screen and (max-width: 1270px) {
   html {
@@ -1410,7 +1414,31 @@ img {
     .footer__button {
       width: 100%;
       padding: 1.4rem 4.8rem;
-      font-size: 1.3rem; } }
+      font-size: 1.3rem; }
+    .footer__menu {
+      display: none; }
+    .footer__map {
+      order: 1;
+      margin-top: -14.5rem;
+      margin-bottom: 15rem; }
+    .footer__address {
+      font-size: 1.5rem;
+      margin-bottom: 2.1rem; }
+    .footer__logo-container {
+      margin-left: 2.15rem;
+      margin-bottom: 3.2rem; }
+    .footer__logo-wrap {
+      width: 3.2rem;
+      height: 3.2rem;
+      margin-right: 1.9rem; }
+    .footer .anti-hero {
+      margin-top: -20rem;
+      background-image: none;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0; }
+      .footer .anti-hero-container {
+        order: 2; } }
 
 @media screen and (max-width: 992px) {
   .nav {
