@@ -2,9 +2,15 @@
   margin-top: -8.4rem
   position: relative
   padding-bottom: 15rem
+  &__section-title
+    margin-top: 4rem
+    &-heading
+      font-size: 1.4rem
+    &-image
+      margin-bottom: 1.3rem
   &__description
     margin: auto
-    margin-bottom: 5.286rem
+    margin-bottom: 5.886rem
     font-family: "Futura Book", sans-serif
     font-size: 1.428rem
     line-height: 1.929rem
@@ -13,25 +19,30 @@
   &__profile-wrap
     //margin-top: 10rem
     position: absolute
-    width: 53%
+    width: 57.7%
     left: 50%
-    margin-left: -26.5%
+    margin-left: -28.85%
   &__profile
     flex-basis: 27%
     max-width: 19.429rem
     position: relative
   &__postscriptum
     margin: auto
-    margin-top: 10rem
+    margin-top: 7.4rem
     color: $dark
     max-width: 40.571rem
+    font-family: "Futura Book", cursive
+    font-size: 1.429rem
+    line-height: 2.429rem
     text-align: center
     &::before
       content: ''
-      width: 92px
+      width: 55px
       height: 1px
       background-color: $primary
-      margin-left: 2rem
+      margin: auto
+      display: block
+      margin-bottom: 0.8rem
 .profile
   &__logo-wrap
     background-color: $primary
@@ -43,13 +54,12 @@
     display: flex
     justify-content: center
     align-items: center
-.card-wrap
-  display: flex
-  justify-content: space-around
+  &__title
+    position: absolute
+    bottom: -4.6rem
+    width: calc(100% - 2.8rem)
+    margin: 0 1.4rem
 .title
-  position: absolute
-  bottom: -4.5rem
-  left: 2rem
   &-wrap--light
     background-color: $light
     color: $dark
@@ -60,12 +70,13 @@
     margin: 0
   &__name
     font-family: "Yeseva One", cursive
-    font-size: 1.428rem
+    font-size: 1.328rem
     line-height: 1.929rem
     text-align: center
     margin: 0
     padding-top: 1.571rem
-    margin-bottom: 0.643rem
+    margin-top: 1rem
+    margin-bottom: 0.243rem
   &__job
     font-family: "Futura Book", sans-serif
     font-size: 1.286rem
@@ -73,11 +84,16 @@
     text-align: center
     margin: 0
     padding-bottom: 1.714rem
+    margin-bottom: -0.5rem
   &__experience
     margin: 0
+    margin-bottom: 1rem
     padding: 0.929rem 1.643rem
     font-family: "Yeseva One", cursive
     font-size: 0.929rem
     line-height: 1.429rem
     text-align: center
     text-transform: uppercase
+.card-wrap
+  display: flex
+  justify-content: space-around
