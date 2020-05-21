@@ -177,6 +177,9 @@ $(document).ready(function () {
     $('.modal__form').validate({
       errorClass: 'invalid',
       errorElement: "div",
+      errorPlacement: function(error, element) {
+        element.after(error);
+      },
       rules: {
         userName: {
           required: true,
@@ -184,7 +187,10 @@ $(document).ready(function () {
           maxlength: 15
         },
         // simple rule, converted to {required:true}
-        userPhone: "required",
+        userPhone: {
+          required: true,
+          minlength: 17
+        },
         // compound rule
         userEmail: {
           required: true,
@@ -197,7 +203,10 @@ $(document).ready(function () {
           minlength: "Имя слишком короткое",
           maxlength: "Имя слишком длинное"
         },
-        userPhone: "Заполните поле",
+        userPhone: {
+          required: "Заполните поле",
+          minlength: "Телефон слишком короткий"
+        },
         userEmail: {
             required: "Заполните поле",
             email: "Введите корректный email"
@@ -208,6 +217,9 @@ $(document).ready(function () {
     $('.control__form').validate({
       errorClass: 'invalid',
       errorElement: "div",
+      errorPlacement: function(error, element) {
+        element.after(error);
+      },
       rules: {
         userName: {
           required: true,
@@ -215,7 +227,10 @@ $(document).ready(function () {
           maxlength: 15
         },
         // simple rule, converted to {required:true}
-        userPhone: "required",
+        userPhone: {
+          required: true,
+          minlength: 17
+        },
         // compound rule
         userEmail: {
           required: true,
@@ -228,7 +243,10 @@ $(document).ready(function () {
           minlength: "Имя слишком короткое",
           maxlength: "Имя слишком длинное"
         },
-        userPhone: "Заполните поле",
+        userPhone: {
+          required: "Заполните поле",
+          minlength: "Телефон слишком короткий"
+        },
         userEmail: {
             required: "Заполните поле",
             email: "Введите корректный email"
@@ -239,6 +257,9 @@ $(document).ready(function () {
     $('.footer__form').validate({
       errorClass: 'invalid',
       errorElement: "div",
+      errorPlacement: function(error, element) {
+        element.after(error);
+      },
       rules: {
         userName: {
           required: true,
@@ -246,7 +267,10 @@ $(document).ready(function () {
           maxlength: 15
         },
         // simple rule, converted to {required:true}
-        userPhone: "required",
+        userPhone: {
+          required: true,
+          minlength: 17
+        },
         // compound rule
         userEmail: {
           required: true,
@@ -259,7 +283,10 @@ $(document).ready(function () {
           minlength: "Имя слишком короткое",
           maxlength: "Имя слишком длинное"
         },
-        userPhone: "Заполните поле",
+        userPhone: {
+          required: "Заполните поле",
+          minlength: "Телефон слишком короткий"
+        },
         userEmail: {
             required: "Заполните поле",
             email: "Введите корректный email"

@@ -407,6 +407,10 @@ template {
   .input.invalid {
     border-bottom: 1px solid tomato; }
 
+div.invalid {
+  position: absolute;
+  margin-top: 4rem; }
+
 .header {
   position: fixed;
   left: 0;
@@ -785,6 +789,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   max-width: 55rem;
   margin: auto; }
 
@@ -1018,7 +1023,7 @@ img {
   position: relative;
   max-width: 63.07rem;
   margin: auto;
-  top: -16rem;
+  top: -20.5rem;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -1062,9 +1067,120 @@ img {
 .footer__input {
   padding-top: 0.2rem; }
 
+.footer__map {
+  margin: auto;
+  margin-bottom: 4rem;
+  max-width: 66.07rem; }
+
+.footer__menu {
+  padding-bottom: 2rem; }
+
+.footer__address {
+  max-width: 42.07rem;
+  color: #E3B873;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.429rem;
+  line-height: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto; }
+
+.footer__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__logo-wrap {
+  background-color: #E3B873;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer .anti-hero {
+  position: relative;
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  .footer .anti-hero-container {
+    z-index: 100; }
+  .footer .anti-hero::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
+
 .clients {
-  margin-top: 60rem;
+  margin-top: 30.6rem;
   padding-bottom: 30rem; }
+  .clients__section-title {
+    margin-bottom: 2rem; }
+    .clients__section-title__heading {
+      font-size: 1.45rem;
+      margin-bottom: 1rem; }
+  .clients__description {
+    max-width: 25.714rem;
+    margin: auto;
+    margin-top: -0.65rem;
+    margin-bottom: 5.2rem;
+    font-family: 'Futura Book', cursive;
+    font-size: 1.429rem;
+    line-height: 1.928rem;
+    text-align: center; }
+
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+  width: 92.2%;
+  margin-left: 2.2rem; }
+
+.review {
+  flex-basis: 29.8%;
+  justify-content: space-between;
+  margin-right: -3.4rem; }
+  .review-title {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.643rem;
+    max-width: 14rem;
+    margin-top: 1.1rem; }
+  .review-image {
+    border-radius: 50%; }
+    .review-image-wrap {
+      margin-right: -1.7rem;
+      width: 8.7rem; }
+  .review-text {
+    font-size: 1.1rem;
+    letter-spacing: -0.1px;
+    line-height: 1.95rem;
+    margin-top: 0.7rem;
+    margin-bottom: 3.05rem; }
+  .review__client-info {
+    display: flex; }
+  .review-info {
+    display: flex;
+    margin-left: -1.6rem; }
+  .review-data {
+    background-color: #E3B873;
+    color: #fff;
+    display: flex;
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 1.214rem;
+    line-height: 1.714rem;
+    margin-right: 0.1rem; }
+    .review-data__image {
+      padding-left: 1.2rem;
+      padding-right: 1.1rem; }
+    .review-data__info {
+      padding-right: 1.3rem;
+      font-size: 1.1rem;
+      text-transform: uppercase; }
+
+.duration {
+  padding-right: 2rem; }
 
 .team {
   margin-top: -8.4rem;
