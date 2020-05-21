@@ -173,6 +173,101 @@ $(document).ready(function () {
     
     // $window.on('scroll resize', check_if_in_view);
     // $window.trigger('scroll');
+
+    $('.modal__form').validate({
+      errorClass: 'invalid',
+      errorElement: "div",
+      rules: {
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        // simple rule, converted to {required:true}
+        userPhone: "required",
+        // compound rule
+        userEmail: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        userName: {
+          required: "Заполните поле",
+          minlength: "Имя слишком короткое",
+          maxlength: "Имя слишком длинное"
+        },
+        userPhone: "Заполните поле",
+        userEmail: {
+            required: "Заполните поле",
+            email: "Введите корректный email"
+        }
+      }
+    });
+
+    $('.control__form').validate({
+      errorClass: 'invalid',
+      errorElement: "div",
+      rules: {
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        // simple rule, converted to {required:true}
+        userPhone: "required",
+        // compound rule
+        userEmail: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        userName: {
+          required: "Заполните поле",
+          minlength: "Имя слишком короткое",
+          maxlength: "Имя слишком длинное"
+        },
+        userPhone: "Заполните поле",
+        userEmail: {
+            required: "Заполните поле",
+            email: "Введите корректный email"
+        }
+      }
+    });
+
+    $('.footer__form').validate({
+      errorClass: 'invalid',
+      errorElement: "div",
+      rules: {
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        // simple rule, converted to {required:true}
+        userPhone: "required",
+        // compound rule
+        userEmail: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        userName: {
+          required: "Заполните поле",
+          minlength: "Имя слишком короткое",
+          maxlength: "Имя слишком длинное"
+        },
+        userPhone: "Заполните поле",
+        userEmail: {
+            required: "Заполните поле",
+            email: "Введите корректный email"
+        }
+      }
+    });
+
+    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 });
 
 

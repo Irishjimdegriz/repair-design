@@ -63,6 +63,8 @@
   &--light
     &::placeholder
       color: $light
+  &--dark
+    color: $dark
 .policy
   &__checkbox
     opacity: 0
@@ -82,3 +84,7 @@
       margin-right: 0.64rem
     &--center
       justify-content: center
+.input
+  outline: none
+  &.invalid
+    border-bottom: 1px solid tomato
