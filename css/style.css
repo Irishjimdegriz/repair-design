@@ -409,7 +409,7 @@ template {
 
 div.invalid {
   position: absolute;
-  margin-top: 4rem; }
+  margin-top: 3.8rem; }
 
 .header {
   position: fixed;
@@ -909,9 +909,9 @@ img {
     .modal__input-group {
       display: flex;
       flex-direction: column;
-      margin-bottom: 3.428rem; }
-      .modal__input-group:last-of-type {
-        margin-bottom: 1rem; }
+      margin-bottom: 3.1rem; }
+      .modal__input-group--last {
+        margin-bottom: 1.3rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
@@ -1209,11 +1209,12 @@ img {
     text-align: center; }
   .team__profile-wrap {
     position: absolute;
-    width: 57.7%;
+    max-width: 89.274rem;
+    width: 100%;
     left: 50%;
-    margin-left: -28.85%; }
+    margin-left: -20%; }
   .team__profile {
-    flex-basis: 27%;
+    flex-basis: 25%;
     max-width: 19.429rem;
     position: relative; }
   .team__postscriptum {

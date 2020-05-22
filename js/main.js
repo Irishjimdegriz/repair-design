@@ -6,7 +6,10 @@ $(document).ready(function () {
         modalBtn = $('[data-toggle=modal]'),
         closeBtn = $('.modal__close'),
         modalDialog = $('.modal__dialog'),
-        scrollUp = $('.scroll-up-container');
+        scrollUp = $('.scroll-up-container'),
+        policyCheck = $('.policy__checkbox'), 
+        policyLabel = $('.policy__label'),
+        labels = $('.label');
 
   const switchModal = () => {
     modal.toggleClass('modal--visible');
@@ -24,9 +27,13 @@ $(document).ready(function () {
   $(document).on('click', function(event) {
     let target = $(event.target);
 
-    if (!target.is(modalBtn) && modal.hasClass('modal--visible') && !target.closest(modalDialog).length){
+    if (target.is(policyCheck) || target.is(policyLabel)) {
+      policyCheck.prop("checked", !policyCheck.prop("checked"));
+    }
+    else if (!target.is(modalBtn) && modal.hasClass('modal--visible') && !target.closest(modalDialog).length && !target.is(labels)){
       switchModal();
     }
+
   });
 
     function scrollFunction() {
@@ -294,7 +301,7 @@ $(document).ready(function () {
       }
     });
 
-    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+    $('[type=tel]').mask('+7(000) 000-00-00');
 
     ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {
