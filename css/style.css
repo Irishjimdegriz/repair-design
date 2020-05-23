@@ -1088,6 +1088,7 @@ img {
   display: none; }
 
 .footer__menu {
+  padding-top: 3.3rem;
   padding-bottom: 3.6rem; }
 
 .footer__address {
@@ -1120,7 +1121,8 @@ img {
 
 .footer .anti-hero {
   position: relative;
-  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding-bottom: 1rem; }
   .footer .anti-hero-container {
     margin-top: -16.8rem;
     margin-left: -1.4rem;
@@ -1355,7 +1357,9 @@ img {
   .swiper-slide__text:nth-of-type(2n-1) {
     margin-right: 2rem; }
   .swiper-slide__heading {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .footer .anti-hero {
+    padding-bottom: 6rem; } }
 
 @media screen and (max-width: 1130px) {
   .title__name {
@@ -1450,6 +1454,11 @@ img {
       max-width: 30rem;
       margin: auto;
       margin-top: 4rem; }
+    .footer__api-map {
+      order: 1;
+      max-width: 30rem;
+      margin: auto;
+      margin-top: 4rem; }
     .footer__address {
       font-size: 1.5rem;
       margin: auto;
@@ -1506,7 +1515,11 @@ img {
   .extra-items {
     display: none; }
   .project {
-    padding-bottom: 121rem; }
+    padding-bottom: 154rem; }
+  .team {
+    padding-top: 2rem; }
+  .footer .anti-hero-container {
+    margin-top: -8.5rem; }
   .video__play {
     width: 7.5rem;
     height: 7.5rem; } }
@@ -1550,7 +1563,7 @@ img {
   .project {
     background-color: #131313;
     padding-top: 2rem;
-    padding-bottom: 145rem;
+    padding-bottom: 129rem;
     margin-bottom: 0; }
     .project__description {
       color: #fff !important;

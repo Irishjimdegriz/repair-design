@@ -328,7 +328,7 @@ $(document).ready(function () {
               iconImageOffset: [-5, -38]
           });
           
-          if (window.outerWidth > 1080) {
+          if (window.innerWidth > 1080) {
             myMap.container.getElement().style.height = '465px';
           }
           else {
@@ -339,7 +339,7 @@ $(document).ready(function () {
           myMap.container.fitToViewport();
 
           myMap.container.events.add('sizechange', () => {
-            if (window.outerWidth > 1080)
+            if (window.innerWidth > 1080)
               myMap.container.getElement().style.height = '465px';
             else
               myMap.container.getElement().style.height = '255px';
