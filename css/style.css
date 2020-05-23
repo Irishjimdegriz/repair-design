@@ -409,7 +409,19 @@ template {
 
 div.invalid {
   position: absolute;
-  margin-top: 3.8rem; }
+  margin-top: 3.8rem;
+  color: tomato; }
+
+div#modalPolicyCheckbox-error, div#controlPolicyCheckbox-error {
+  margin-top: 1.6rem; }
+
+div#footerPolicyCheckbox-error {
+  margin-top: 1.9rem;
+  margin-left: 9.4rem; }
+
+div#controlPolicyCheckbox-error {
+  margin-top: 3rem;
+  margin-left: 18.3rem; }
 
 .header {
   position: fixed;
@@ -877,8 +889,12 @@ img {
   align-items: center;
   justify-content: center; }
   .modal--visible {
-    opacity: 1;
-    visibility: visible; }
+    opacity: 1 !important;
+    visibility: visible !important; }
+  .modal--invisible {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none; }
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
@@ -921,12 +937,52 @@ img {
     padding: 1.3rem 3.7rem; }
   .modal__policy {
     position: relative; }
+  .modal-response {
+    display: none;
+    margin-bottom: 0; }
+  .modal-accept {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 199;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .modal-accept__close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 28px;
+      height: 28px;
+      background: transparent url("../img/close.svg") no-repeat center;
+      border: none;
+      margin: 12px;
+      cursor: pointer;
+      outline: none; }
 
 .policy__checkbox {
   position: absolute; }
 
 .policy__label {
   font-size: 1.15rem; }
+
+.footer-response {
+  display: none;
+  margin-bottom: 0; }
+
+.control-response {
+  display: none;
+  margin-bottom: 0; }
+
+.response--visible {
+  display: block; }
 
 .steps {
   padding-top: 29.5rem;
@@ -1495,7 +1551,9 @@ img {
   .steps {
     display: none; }
   .project {
-    padding-bottom: 50rem; } }
+    padding-bottom: 50rem; }
+  .team {
+    padding-top: 2rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1516,8 +1574,6 @@ img {
     display: none; }
   .project {
     padding-bottom: 154rem; }
-  .team {
-    padding-top: 2rem; }
   .footer .anti-hero-container {
     margin-top: -8.5rem; }
   .video__play {

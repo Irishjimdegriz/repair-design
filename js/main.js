@@ -9,14 +9,29 @@ $(document).ready(function () {
         scrollUp = $('.scroll-up-container'),
         policyCheck = $('.policy__checkbox'), 
         policyLabel = $('.policy__label'),
-        labels = $('.label');
+        labels = $('.label'),
+        modalAccept = $('.modal-accept'),
+        acceptCloseBtn = $('.modal-accept__close'),
+        modalform = $('.modal__form'),
+        controlform = $('.control__form'),
+        footerform = $('.footer__form'),
+        footerTitle = $('.footer__title'),
+        modalTitle = $('.modal__title'),
+        modalResponse = $('.modal-response'),
+        controlResponse = $('.control-response'),
+        footerResponse = $('.footer-response');
 
   const switchModal = () => {
     modal.toggleClass('modal--visible');
+    modalResponse.removeClass('modal--visible');
+    modalResponse.removeClass('response--visible');
   }
 
   modalBtn.on('click', switchModal);
   closeBtn.on('click', switchModal);
+  acceptCloseBtn.on('click', () => {
+    modalAccept.removeClass('modal--visible');
+  });
 
   $(document).on('keydown', function(e) {
     if (e.code === "Escape") {
@@ -202,6 +217,9 @@ $(document).ready(function () {
         userEmail: {
           required: true,
           email: true
+        },
+        modalPolicyCheckbox: {
+          required: true
         }
       },
       messages: {
@@ -217,6 +235,9 @@ $(document).ready(function () {
         userEmail: {
             required: "Заполните поле",
             email: "Введите корректный email"
+        },
+        modalPolicyCheckbox: {
+          required: "Подтвердите согласие с обработкой данных",
         }
       },
       submitHandler: function(form) {
@@ -226,9 +247,14 @@ $(document).ready(function () {
           data: $(form).serialize(),
           success: function (response) {
             console.log("Ajax сработал. Ответ сервера: " + response);
-            alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+            //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
             $(form)[0].reset();
-            modal.removeClass('modal--visible');
+            //modal.removeClass('modal--visible');
+            modalform.addClass('modal--invisible');
+            modalTitle.addClass('modal--invisible');
+            modalResponse.removeClass('modal--invisible');
+            modalResponse.addClass('response--visible');
+            modalResponse.addClass('modal--visible');
           }
         });
       }
@@ -255,6 +281,9 @@ $(document).ready(function () {
         userEmail: {
           required: true,
           email: true
+        },
+        controlPolicyCheckbox: {
+          required: true,
         }
       },
       messages: {
@@ -270,6 +299,9 @@ $(document).ready(function () {
         userEmail: {
             required: "Заполните поле",
             email: "Введите корректный email"
+        },
+        controlPolicyCheckbox: {
+          required: "Подтвердите согласие с обработкой данных",
         }
       },
       submitHandler: function(form) {
@@ -279,9 +311,14 @@ $(document).ready(function () {
           data: $(form).serialize(),
           success: function (response) {
             console.log("Ajax сработал. Ответ сервера: " + response);
-            alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+            //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
             $(form)[0].reset();
             modal.removeClass('modal--visible');
+            controlform.addClass('modal--invisible');
+            controlResponse.removeClass('modal--invisible');
+            //controlTitle.addClass('modal--invisible');
+            controlResponse.addClass('response--visible');
+            //modalAccept.addClass('modal--visible');
           }
         });
       }
@@ -308,6 +345,9 @@ $(document).ready(function () {
         userEmail: {
           required: true,
           email: true
+        },
+        footerPolicyCheckbox: {
+          required: true,
         }
       },
       messages: {
@@ -323,6 +363,9 @@ $(document).ready(function () {
         userEmail: {
             required: "Заполните поле",
             email: "Введите корректный email"
+        },
+        footerPolicyCheckbox: {
+          required: "Подтвердите согласие с обработкой данных",
         }
       },
       submitHandler: function(form) {
@@ -332,9 +375,14 @@ $(document).ready(function () {
           data: $(form).serialize(),
           success: function (response) {
             console.log("Ajax сработал. Ответ сервера: " + response);
-            alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+            //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
             $(form)[0].reset();
             modal.removeClass('modal--visible');
+            //modalAccept.addClass('modal--visible');
+            footerform.addClass('modal--invisible');
+            footerTitle.addClass('modal--invisible');
+            footerResponse.removeClass('modal--invisible');
+            footerResponse.addClass('response--visible');
           }
         });
       }
