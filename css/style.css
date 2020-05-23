@@ -1077,6 +1077,13 @@ img {
   max-width: 66.07rem;
   min-height: 33.12rem; }
 
+.footer__api-map {
+  margin: auto;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  max-width: 66.07rem;
+  height: 33.12rem; }
+
 .footer__mobile-map {
   display: none; }
 
