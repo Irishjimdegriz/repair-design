@@ -1203,12 +1203,13 @@ img {
   .team__section-title {
     margin-top: 4rem; }
     .team__section-title-heading {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      margin-bottom: 0.9rem; }
     .team__section-title-image {
       margin-bottom: 1.3rem; }
   .team__description {
     margin: auto;
-    margin-bottom: 5.686rem;
+    margin-bottom: 5.786rem;
     font-family: "Futura Book", sans-serif;
     font-size: 1.428rem;
     line-height: 1.929rem;
@@ -1227,9 +1228,11 @@ img {
     flex-basis: 25%;
     max-width: 19.429rem;
     position: relative; }
+    .team__profile:first-of-type {
+      margin-left: -0.11rem; }
   .team__postscriptum {
     margin: auto;
-    margin-top: 10.1rem;
+    margin-top: 7.5rem;
     color: #131313;
     max-width: 40.571rem;
     font-family: "Futura Book", cursive;
@@ -1258,7 +1261,7 @@ img {
 
 .profile__title {
   position: absolute;
-  bottom: -7.2rem;
+  bottom: -5.2rem;
   width: calc(100% - 2.8rem);
   margin: 0 1.4rem; }
 
@@ -1274,13 +1277,13 @@ img {
 
 .title__name {
   font-family: "Yeseva One", cursive;
-  font-size: 1.328rem;
+  font-size: 1.278rem;
   line-height: 1.929rem;
   text-align: center;
   margin: 0;
-  padding-top: 1.571rem;
+  padding-top: 1.371rem;
   margin-top: 1rem;
-  margin-bottom: 0.243rem; }
+  margin-bottom: 0.143rem; }
 
 .title__job {
   font-family: "Futura Book", sans-serif;
@@ -1289,11 +1292,11 @@ img {
   text-align: center;
   margin: 0;
   padding-bottom: 1.714rem;
-  margin-bottom: -0.5rem; }
+  margin-bottom: -0.3rem; }
 
 .title__experience {
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
   padding: 0.929rem 1.643rem;
   font-family: "Yeseva One", cursive;
   font-size: 0.929rem;
