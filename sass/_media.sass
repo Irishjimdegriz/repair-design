@@ -152,6 +152,7 @@
       max-width: 30rem
       margin: auto
       margin-top: 4rem
+      margin-bottom: -12rem
     &__address
       font-size: 1.5rem
       margin: auto
@@ -170,6 +171,7 @@
       display: flex
       flex-direction: column
       margin-bottom: 0
+      padding-bottom: 0
       &-container
         order: 2
         margin-top: 3.4rem
@@ -224,6 +226,10 @@
     &__play
       width: 7.5rem
       height: 7.5rem
+  .footer
+    &__api-map
+      margin-bottom: 0rem
+      width: 100%
 
 @media screen and ( max-width: 570px)
   .contacts
@@ -410,7 +416,8 @@
     &__button
       position: absolute
       padding: 1.486rem 11.3rem
-      margin-left: 0.4rem
+      left: 50%
+      transform: translateX(-50%)
       bottom: -1.5rem
       order: 4
     &__policy
@@ -447,6 +454,17 @@
       &__text
         &:nth-of-type(2n)
           padding-left: 0rem
+
+@media screen and ( max-width: 400px)
+  .control__button
+    padding: 1.486rem 11.3rem
+  .footer
+    &__api-map
+      max-width: 25rem
+
+@media screen and ( max-width: 380px)
+  .control__button
+    padding: 1.486rem 8.3rem
 
 @media screen and ( max-height: 540px )
   .hero

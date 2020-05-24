@@ -639,6 +639,10 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin-right: 1rem; }
 
+.response-link {
+  text-decoration: none;
+  color: #E3B873; }
+
 @font-face {
   font-family: 'Futura Book';
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
@@ -1076,6 +1080,10 @@ img {
 .bullet-text {
   font-size: 1.1rem; }
 
+.footer > .container {
+  width: 100%;
+  max-width: 100%; }
+
 .footer-wrap {
   background-color: #181818;
   position: relative;
@@ -1217,6 +1225,8 @@ img {
   margin-left: 2.2rem; }
 
 .review {
+  display: flex;
+  flex-direction: column;
   flex-basis: 29.8%;
   justify-content: space-between;
   margin-right: -3.4rem; }
@@ -1514,7 +1524,8 @@ img {
       order: 1;
       max-width: 30rem;
       margin: auto;
-      margin-top: 4rem; }
+      margin-top: 4rem;
+      margin-bottom: -12rem; }
     .footer__address {
       font-size: 1.5rem;
       margin: auto;
@@ -1532,7 +1543,8 @@ img {
       background-image: none;
       display: flex;
       flex-direction: column;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      padding-bottom: 0; }
       .footer .anti-hero-container {
         order: 2;
         margin-top: 3.4rem; } }
@@ -1578,7 +1590,10 @@ img {
     margin-top: -8.5rem; }
   .video__play {
     width: 7.5rem;
-    height: 7.5rem; } }
+    height: 7.5rem; }
+  .footer__api-map {
+    margin-bottom: 0rem;
+    width: 100%; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1747,7 +1762,8 @@ img {
     .control__button {
       position: absolute;
       padding: 1.486rem 11.3rem;
-      margin-left: 0.4rem;
+      left: 50%;
+      transform: translateX(-50%);
       bottom: -1.5rem;
       order: 4; }
     .control__policy {
@@ -1777,6 +1793,16 @@ img {
 @media screen and (max-width: 435px) {
   .swiper-slide__text:nth-of-type(2n) {
     padding-left: 0rem; } }
+
+@media screen and (max-width: 400px) {
+  .control__button {
+    padding: 1.486rem 11.3rem; }
+  .footer__api-map {
+    max-width: 25rem; } }
+
+@media screen and (max-width: 380px) {
+  .control__button {
+    padding: 1.486rem 8.3rem; } }
 
 @media screen and (max-height: 540px) {
   .hero__scroll-down {
