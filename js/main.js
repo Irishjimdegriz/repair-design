@@ -1,4 +1,5 @@
   const swiperLabels = ['Выезд на замер <br>помещения', 'Составление<br> сметы', 'Разработка<br>  дизайн проекта', 'Закупка расходных<br> материалов', 'Ремонтно-отделочные<br> работы', 'Приемка-сдача <br>работ'];
+  const swiperFantasyLabels = ['Американская классика', 'Имперский стиль', 'Классика', 'Лофт', 'Минимализм', 'Прованс', 'Романтизм', 'Скандинавский стиль', 'Средиземноморский стиль', 'Хайтек', 'Эклектизм'];
 
 
 $(document).ready(function () {
@@ -166,6 +167,21 @@ $(document).ready(function () {
     if(window.matchMedia('(max-width: 1270px)').matches){
       swiper.pagination.dynamicBullets = true;
     }
+
+    
+    let swiperFantasy = new Swiper('.swiper-fantasy', {
+      loop: true,
+      pagination: {
+        el: '.swiper-fantasy-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<div class="${className} swiper-fantasy-custom-bullet"><div class="fantasy-bullet-text">${(swiperFantasyLabels[index])}</div></div>`;
+        },
+      },
+      swiping: {
+        noSwiping: true
+      }
+    });
 
     new WOW().init();
     // var $animation_elements = $('.animate');
