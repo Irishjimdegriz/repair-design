@@ -7,8 +7,6 @@ $(document).ready(function () {
         closeBtn = $('.modal__close'),
         modalDialog = $('.modal__dialog'),
         scrollUp = $('.scroll-up-container'),
-        policyCheck = $('.policy__checkbox'), 
-        policyLabel = $('.policy__label'),
         labels = $('.label'),
         modalAccept = $('.modal-accept'),
         acceptCloseBtn = $('.modal-accept__close'),
@@ -42,10 +40,11 @@ $(document).ready(function () {
   $(document).on('click', function(event) {
     let target = $(event.target);
 
-    if (target.is(policyCheck) || target.is(policyLabel)) {
-      policyCheck.prop("checked", !policyCheck.prop("checked"));
-    }
-    else if (!target.is(modalBtn) && modal.hasClass('modal--visible') && !target.closest(modalDialog).length && !target.is(labels)){
+    // if (target.is(policyCheck) || target.is(policyLabel)) {
+    //   policyCheck.prop("checked", !policyCheck.prop("checked"));
+    // }
+    // else 
+    if (!target.is(modalBtn) && modal.hasClass('modal--visible') && !target.closest(modalDialog).length && !target.is(labels)){
       switchModal();
     }
 
