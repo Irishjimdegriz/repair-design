@@ -861,7 +861,7 @@ img {
     margin-left: 0.3rem; }
   .project__row {
     position: absolute;
-    width: 65%;
+    width: 85%;
     left: 50%;
     transform: translateX(-50%); }
   .project__col {
