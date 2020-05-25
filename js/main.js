@@ -18,7 +18,8 @@ $(document).ready(function () {
         modalTitle = $('.modal__title'),
         modalResponse = $('.modal-response'),
         controlResponse = $('.control-response'),
-        footerResponse = $('.footer-response');
+        footerResponse = $('.footer-response'),
+        videoPlay = $('.video__play');
 
   const switchModal = () => {
     modal.toggleClass('modal--visible');
@@ -168,48 +169,7 @@ $(document).ready(function () {
       swiper.pagination.dynamicBullets = true;
     }
 
-    
-    let swiperFantasy = new Swiper('.swiper-fantasy', {
-      loop: true,
-      pagination: {
-        el: '.swiper-fantasy-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return `<div class="${className} swiper-fantasy-custom-bullet"><div class="fantasy-bullet-text">${(swiperFantasyLabels[index])}</div></div>`;
-        },
-      },
-      swiping: {
-        noSwiping: true
-      }
-    });
-
     new WOW().init();
-    // var $animation_elements = $('.animate');
-    // var $window = $(window);
-    
-    // function check_if_in_view() {
-    //   var window_height = $window.height();
-    //   var window_top_position = $window.scrollTop();
-    //   var window_bottom_position = (window_top_position + window_height);
-     
-    //   $.each($animation_elements, function() {
-    //     var $element = $(this);
-    //     var element_height = $element.outerHeight();
-    //     var element_top_position = $element.offset().top;
-    //     var element_bottom_position = (element_top_position + element_height);
-     
-    //     //check to see if this current container is within viewport
-    //     if ((element_bottom_position >= window_top_position) &&
-    //         (element_top_position <= window_bottom_position)) {
-    //       $element.addClass('slidein');
-    //     } else {
-    //       $element.removeClass('slidein');
-    //     }
-    //   });
-    // }
-    
-    // $window.on('scroll resize', check_if_in_view);
-    // $window.trigger('scroll');
 
     $('.modal__form').validate({
       errorClass: 'invalid',
@@ -264,12 +224,11 @@ $(document).ready(function () {
             console.log("Ajax сработал. Ответ сервера: " + response);
             //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
             $(form)[0].reset();
-            //modal.removeClass('modal--visible');
-            modalform.addClass('modal--invisible');
-            modalTitle.addClass('modal--invisible');
-            modalResponse.removeClass('modal--invisible');
-            modalResponse.addClass('response--visible');
-            modalResponse.addClass('modal--visible');
+            modal.removeClass('modal--visible');
+            modalAccept.addClass('modal--visible');
+            //ym(64345651,'reachGoal','send-button');
+            ym(64345651,'reachGoal','request');
+            return true;
           }
         });
       }
@@ -329,11 +288,13 @@ $(document).ready(function () {
             //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
             $(form)[0].reset();
             modal.removeClass('modal--visible');
-            controlform.addClass('modal--invisible');
-            controlResponse.removeClass('modal--invisible');
+            //controlform.addClass('modal--invisible');
+            //controlResponse.removeClass('modal--invisible');
             //controlTitle.addClass('modal--invisible');
-            controlResponse.addClass('response--visible');
-            //modalAccept.addClass('modal--visible');
+            //controlResponse.addClass('response--visible');
+            modalAccept.addClass('modal--visible');
+            ym(64345651,'reachGoal','callback');
+            return true;
           }
         });
       }
@@ -394,10 +355,13 @@ $(document).ready(function () {
             $(form)[0].reset();
             modal.removeClass('modal--visible');
             //modalAccept.addClass('modal--visible');
-            footerform.addClass('modal--invisible');
-            footerTitle.addClass('modal--invisible');
-            footerResponse.removeClass('modal--invisible');
-            footerResponse.addClass('response--visible');
+            //footerform.addClass('modal--invisible');
+            //footerTitle.addClass('modal--invisible');
+            //footerResponse.removeClass('modal--invisible');
+            //footerResponse.addClass('response--visible');
+            modalAccept.addClass('modal--visible');
+            ym(64345651,'reachGoal','callback');
+            return true;
           }
         });
       }
@@ -422,7 +386,7 @@ $(document).ready(function () {
               // Необходимо указать данный тип макета.
               iconLayout: 'default#image',
               // Своё изображение иконки метки.
-              iconImageHref: '../img/marker.svg',
+              iconImageHref: './img/marker.svg',
               // Размеры метки.
               iconImageSize: [30, 42],
               // Смещение левого верхнего угла иконки относительно

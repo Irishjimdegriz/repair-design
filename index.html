@@ -12,26 +12,25 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=6fdbd675-9305-4e9b-8942-d69cd6eef340&lang=ru_RU">
-  </script>
 </head>
 <body>
+  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(64345651, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/64345651" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   <header class="header">
     <div class="container">
        <div class="menu">
          <a href='./' class="logo menu__logo">Repair design project</a>
          <!-- /.logo -->
          <nav class="nav menu__nav">
-           <a href="#" class="nav__item">Главная</a>
-           <a href="#" class="nav__item">Проекты</a>
-           <a href="#" class="nav__item">Замер</a>
-           <a href="#" class="nav__item">Команда</a>
-           <a href="#" class="nav__item">Отзывы</a>
-           <a href="#" class="nav__item">Контакты</a>
+           <a href="#hero" class="nav__item">Главная</a>
+           <a href="#projects" class="nav__item">Проекты</a>
+           <a href="#specialist" class="nav__item">Замер</a>
+           <a href="#team" class="nav__item">Команда</a>
+           <a href="#clients" class="nav__item">Отзывы</a>
+           <a href="#footer" class="nav__item">Контакты</a>
          </nav>
          <div class="contacts menu__contacts">
            <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-           <button class="contacts__button button button--primary" data-toggle='modal'>Заказать звонок</button> 
+           <button onclick="ym(64345651,'reachGoal','contact-button'); return true;" class="contact-button contacts__button button button--primary" data-toggle='modal'>Заказать звонок</button> 
          </div>
          <!-- /.contacts -->
        </div> 
@@ -204,7 +203,8 @@
           <!-- /.section-title__image -->
         </div>
         <!-- /.section-title -->
-        <div class="control__video video">
+        <div class="control__video video" id='player'>
+          <script src="https://www.youtube.com/iframe_api"></script>
           <img src="img/play.svg" alt="play icon" class="video__play">
         </div>
         <!-- /.control__video video -->
@@ -229,70 +229,6 @@
         </form>
       </div>
     </section>
-    <section class="section specialist">
-      <div class="container">
-        <div class="row">
-          <div class="col-60">
-            <p class="specialist__master-step master-step master-step--first">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</p>
-            <!-- /.specialist__master-step master-step master-step--first -->
-            <p class="specialist__master-step master-step master-step--second">Бесплатный замер</p>
-            <!-- /.specialist__master-step master-step master-step--second -->
-            <p class="specialist__master-step master-step master-step--third">Бесплатная консультация</p>
-            <!-- /.specialist__master-step master-step master-step--third -->
-            <p class="specialist__master-step master-step master-step--fourth">Получите смету расходов и сроки вашего будущего ремонта
-            </p>
-            <!-- /.specialist__master-step master-step master-step--fourth -->
-          </div>
-          <div class="col-40">
-            <h3 class="specialist__title">Оставьте заявку на бесплатный выезд замерщика</h3>
-            <form action="send.php" method="POST" class="form specialist__form">
-              <div class="input-group specialist__input-group">
-                <label for="specialist-user-name" class="label form__label label--light">Имя</label>
-                <input type="text" name="userName" class="input form__input specialist__input input--dark" id="specialist-user-name" placeholder='Как вас зовут:'>
-              </div>
-              <!-- /.input-group specialist__input-group -->
-              <div class="input-group specialist__input-group">
-                <label for="specialist-user-phone" class="label form__label label--light">Телефон</label>
-                <input type="tel" name="userPhone" class="input form__input specialist__input input--dark" id="specialist-user-phone" placeholder='Ваш номер телефона:'>
-              </div>
-              <!-- /.input-group specialist__input-group -->
-              <div class="input-group specialist__input-group specialist__input-group--last">
-                <label for="specialist-user-email" class="label form__label label--light">Email</label>
-                <input type="email" name="userEmail" class="input form__input specialist__input input--dark" id="specialist-user-email" placeholder='Ваш email'>   
-              </div>
-              <!-- /.input-group specialist__input-group -->   
-              <div class="policy specialist__policy">
-                <input type="checkbox" name='specialistPolicyCheckbox' id='policy-checkbox' class='policy__checkbox' checked>
-                <label for="policy-checkbox" class='policy__label specialist__policy-label'>Я соглашаюсь с обработкой данных</label>
-              </div>
-              <button class="button button--primary specialist__button">Вызвать замерщика</button>
-            </form>
-            <p class="specialist__postscriptum">
-              Это поможет сэкономить 10 - 20% от стоимости материалов
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /.section specialist -->
-    <section class="section fantasy">
-      <div class="container">
-        <h2>Мы реализуем ваши самые смелые фантазии!</h2>
-        <div class="swiper-container swiper-fantasy">
-          <!-- Add Pagination -->
-          <div class="swiper-pagination swiper-fantasy-pagination"></div>
-          <div class="swiper-wrapper swiper-fantasy-wrapper swiper-no-swiping">
-            <div class="swiper-slide swiper-fantasy__image"><img class='swiper-fantasy' src="img/steps/step-1.jpg" alt="Finished 1"></div>
-            <div class="swiper-slide swiper-fantasy__image"><img class='swiper-fantasy' src="img/steps/step-2.jpg" alt="Finished 2"></div>
-            <div class="swiper-slide swiper-fantasy__image"><img class='swiper-fantasy' src="img/steps/step-3.jpg" alt="Finished 3"></div>
-            <div class="swiper-slide swiper-fantasy__image"><img class='swiper-fantasy' src="img/steps/step-4.jpg" alt="Finished 4"></div>
-            <div class="swiper-slide swiper-fantasy__image"><img class='swiper-fantasy' src="img/steps/step-5.jpg" alt="Finished 5"></div>
-            <div class="swiper-slide swiper-fantasy__image"><img class='swiper-fantasy' src="img/steps/step-6.jpg" alt="Finished 6"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /.section fantasy -->
     <section class="section types">
       <div class="container">
         <div class="section-title types__section-title">
@@ -382,6 +318,51 @@
       </div>
     </section>
     <!-- /.section /.types -->
+    <section class="section specialist">
+      <div class="container">
+        <ol class="actions specialist__actions">
+          <li class="action actions__action action--first">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</li>
+          <!-- /.action actions__action -->
+          <li class="action actions__action action--second">Бесплатный замер</li>
+          <!-- /.action actions__action -->
+          <li class="action actions__action action--third">Бесплатная консультация</li>
+          <!-- /.action actions__action -->
+          <li class="action actions__action action--fourth">Получите смету расходов и сроки вашего будущего ремонта</li>
+          <!-- /.action actions__action -->
+        </ol>
+        <div class="form-container">
+          <form action="send.php" method="POST" class="form specialist__form">
+            <h3 class="specialist__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+            <div class="input-group specialist__input-group">
+              <label for="specialist-user-name" class="label form__label label--light">Имя</label>
+              <input type="text" name="userName" class="input form__input specialist__input input--light" id="specialist-user-name" placeholder='Как вас зовут:'>
+            </div>
+            <!-- /.input-group specialist__input-group -->
+            <div class="input-group specialist__input-group">
+              <label for="specialist-user-phone" class="label form__label label--light">Телефон</label>
+              <input type="tel" name="userPhone" class="input form__input specialist__input input--light" id="specialist-user-phone" placeholder='Ваш телефон:'>
+            </div>
+            <!-- /.input-group specialist__input-group -->
+            <div class="input-group specialist__input-group specialist__input-group--last">
+              <label for="specialist-user-email" class="label form__label label--light">Email</label>
+              <input type="email" name="userEmail" class="input form__input specialist__input input--light" id="specialist-user-email" placeholder='Ваш email'>   
+            </div>
+            <!-- /.input-group specialist__input-group -->   
+            <div class="policy specialist__policy">
+              <input type="checkbox" name='specialistPolicyCheckbox' id='policy-checkbox' class='policy__checkbox' checked>
+              <label for="policy-checkbox" class='policy__label specialist__policy-label'>Я соглашаюсь с обработкой данных</label>
+            </div>
+            <button class="button button--primary specialist__button">Вызвать замерщика</button>
+          </form>
+          <div class="discount specialist__discount">
+            <div class="discount-icon discount__discount-icon">
+            </div>
+            <p class="discount__description">Это поможет сэкономить 10 - 20% от стоимости материалов</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.section specialist -->
     <section class="section project">
       <div class="container project__container">
         <div class="section-title project__section-title">
@@ -589,7 +570,7 @@
       <!-- /.container -->
     </section>
     <!-- /.section steps -->
-    <section class="section team section--dark">
+    <section class="section team section--dark" id="team">
       <div class="container">
         <div class="section-title team__section-title">
           <h2 class="section-title__heading team__section-title-heading">Наша команда</h2>
@@ -669,7 +650,7 @@
       <!-- /.container -->
     </section>
     <!-- /.section team section--dark -->
-    <section class="section clients">
+    <section class="section clients" id="clients">
       <div class="container">
         <div class="section-title clients__section-title">
           <h2 class="section-title__heading clients__section-title__heading">Наши клиенты</h2>
@@ -749,7 +730,7 @@
   <footer class="footer section section--dark">
     <div class="container">
       <div class="anti-hero">
-        <div class="footer-wrap">
+        <div class="footer-wrap" id="footer">
           <h3 class="footer__title footer-response">Ваша заявка отправлена! Также вы можете подписаться на нашу <a class="response-link"  href="https://vk.com/glo_academy">группу вконтакте</a></h3>
           <h3 class="footer__title">Остались вопросы?</h3>
           <form action="send.php" method="POST" class="form footer__form">
@@ -856,6 +837,8 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=6fdbd675-9305-4e9b-8942-d69cd6eef340&lang=ru_RU">
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>

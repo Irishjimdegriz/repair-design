@@ -26,4 +26,9 @@ function serveSass() {
       .pipe(browserSync.stream());
 };
 
+function buildCSS(done) {
+  src('css/**/**.css').pipe();
+  done();
+}
+
 exports.serve = bs;

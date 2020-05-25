@@ -511,6 +511,7 @@ img {
     text-align: left; }
   .section-title__heading {
     text-transform: uppercase;
+    font-weight: normal;
     font-family: 'Yeseva One', cursive;
     line-height: 138%; }
     .section-title__heading--primary {
@@ -650,14 +651,14 @@ img {
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: wrap; }
+  font-display: swap; }
 
 @font-face {
   font-family: 'Futura Demi';
   src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: wrap; }
+  font-display: swap; }
 
 .hero {
   position: relative;
@@ -1388,22 +1389,148 @@ img {
   width: 100%; }
 
 .specialist {
-  display: none; }
+  padding-top: 11.6rem;
+  margin-left: -13.2rem; }
+  .specialist > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
   .specialist__form {
-    background-color: #181818;
-    max-width: 63.07rem;
+    background-color: #131313;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 61rem; }
+  .specialist__title {
+    font-family: "Futura Demi", cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    max-width: 20rem;
     margin: auto;
-    margin-bottom: 4.4rem;
-    padding: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 2.914rem;
+    padding-top: 1.8rem;
+    color: #fff;
+    line-height: 1.8rem; }
+  .specialist__input-group {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    flex-basis: 80%;
+    margin: auto;
+    margin-bottom: 3.5rem; }
+    .specialist__input-group--last {
+      margin-bottom: 1.3rem; }
+  .specialist__policy {
+    flex-basis: 100%;
+    color: #fff;
+    margin-left: 3.5rem;
+    margin-bottom: 2.7rem; }
+    .specialist__policy-label {
+      margin-top: 0;
+      font-size: 1.142rem; }
+  .specialist__button {
+    margin-bottom: 2rem;
+    margin-left: 17.6rem;
+    padding: 1.25rem 2.6rem;
+    font-size: 1rem;
+    outline: none; }
+  .specialist__input {
+    padding-top: 0.2rem; }
 
-.swiper-fantasy-pagination {
+.actions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: requestCounter;
+  position: relative;
+  width: 100%;
+  background-image: url("../img/specialist/building.png"), url("../img/specialist/circle.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 0 55px;
+  height: 58rem; }
+  .actions__action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 42px;
+    font-family: 'Futura Book', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.314rem;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #131313; }
+    .actions__action::before {
+      counter-increment: requestCounter;
+      content: "0" counter(requestCounter);
+      position: absolute;
+      top: 0;
+      left: -60px;
+      width: 42px;
+      height: 42px;
+      margin-right: 17px;
+      font-family: 'Yeseva One', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 42px;
+      text-align: center;
+      color: #fff;
+      background-color: #E3B873;
+      border-radius: 50%; }
+
+.action--first {
+  top: 115px;
+  left: 415px;
+  max-width: 24rem; }
+  .action--first::before {
+    top: 3px; }
+
+.action--second {
+  top: 236px;
+  left: 489px; }
+  .action--second::before {
+    top: -7px; }
+
+.action--third {
+  top: 401px;
+  left: 511px; }
+  .action--third::before {
+    top: -11px;
+    left: -57px; }
+
+.action--fourth {
+  top: 550px;
+  left: 446px;
+  max-width: 19rem; }
+  .action--fourth::before {
+    left: -57px; }
+
+.discount {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-left: -1.4rem;
+  margin-top: 2rem; }
+  .discount__description {
+    font-family: 'Futura Demi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #E3B873;
+    max-width: 23rem;
+    margin-top: 1.4rem; }
+  .discount-icon {
+    width: 5.2rem;
+    height: 5.05rem;
+    margin-right: 25px;
+    padding: 20px 16px;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+    border-radius: 50%;
+    background: #E3B873 url("../img/specialist/piggy-bank.svg") no-repeat center; }
 
 @media screen and (max-width: 1600px) {
   .col-40 {
@@ -1454,7 +1581,9 @@ img {
     font-size: 0.7rem; }
   .title__job {
     font-size: 1.0rem;
-    padding-bottom: 1.4rem; } }
+    padding-bottom: 1.4rem; }
+  .actions__action {
+    font-size: 1.114rem; } }
 
 @media screen and (max-width: 1080px) {
   .team__section-title-heading {
@@ -1575,6 +1704,8 @@ img {
     .team__postscriptum {
       display: none; }
   .clients {
+    display: none; }
+  .specialist {
     display: none; }
   .footer__menu {
     display: none; }
