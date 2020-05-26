@@ -472,7 +472,8 @@ div#controlPolicyCheckbox-error {
 
 .col-30 {
   flex-basis: 32%;
-  margin-right: 0.1rem; }
+  margin-right: 0.1rem;
+  margin-left: 0.7rem; }
 
 .col-40 {
   width: 40%; }
@@ -552,7 +553,7 @@ img {
       margin: 0px 10px; }
 
 .price-tag--long {
-  bottom: -1.29rem;
+  bottom: -1.69rem;
   padding-left: 2rem;
   padding-right: 5.9rem; }
 
@@ -769,9 +770,6 @@ img {
     color: #E3B873;
     letter-spacing: -0.4px; }
 
-.control > .container {
-  margin-left: 9.2rem; }
-
 .control__section-title {
   margin-top: -25.6rem;
   margin-bottom: 2.214rem; }
@@ -860,7 +858,7 @@ img {
 .project {
   padding-top: 7.4rem;
   padding-bottom: 16.4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3.75rem;
   position: relative; }
   .project__section-title {
     margin-top: 3.5rem; }
@@ -879,22 +877,23 @@ img {
     color: #363636; }
   .project__card-title {
     margin-top: 0.1rem;
-    margin-bottom: 0.63rem; }
+    margin-bottom: 0.63rem;
+    margin-left: -0.2rem; }
   .project__card-list {
     margin-left: 0.4rem;
     margin-top: -0.1rem;
     padding: 0 0 0 0.8rem;
     line-height: 1.9rem; }
   .project-card__text {
+    margin-left: 2.4rem;
     margin-top: -9.2rem;
-    padding: 1.79rem 2.34rem; }
+    padding: 1.39rem 2.34rem; }
   .project__row {
     position: absolute;
     width: 74.5%;
+    max-width: 1256px;
     left: 50%;
     transform: translateX(-50%); }
-  .project__col {
-    flex-basis: 31.5%; }
 
 .dots {
   display: none; }
@@ -1189,7 +1188,7 @@ img {
   display: none; }
 
 .footer__menu {
-  width: 77%;
+  width: 70%;
   margin: auto;
   padding-top: 3.3rem;
   padding-bottom: 3.6rem; }
@@ -1238,6 +1237,9 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
+
+.footer .contacts__button {
+  margin-right: 0.5rem; }
 
 .loader {
   position: absolute;
@@ -1495,7 +1497,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    max-width: 100%; }
+    max-width: 1400px; }
   .specialist__form {
     background-color: #131313;
     display: flex;
@@ -1546,7 +1548,7 @@ img {
 .actions {
   margin: 0;
   margin-top: 0.2rem;
-  margin-left: 0.9rem;
+  margin-left: 0.5rem;
   padding: 0;
   list-style: none;
   counter-reset: requestCounter;
