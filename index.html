@@ -232,7 +232,7 @@
     <section class="section types">
       <div class="container">
         <div class="section-title types__section-title">
-          <h2 class="section-title__heading animate">Виды ремонта</h2>
+          <h2 class="section-title__heading types__section-title__heading animate">Виды ремонта</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image">
             <img src="img/tools.svg" alt="tools">
@@ -330,7 +330,7 @@
           <li class="action actions__action action--fourth">Получите смету расходов и сроки вашего будущего ремонта</li>
           <!-- /.action actions__action -->
         </ol>
-        <div class="form-container">
+        <div class="form-container specialist__form-container">
           <form action="send.php" method="POST" class="form specialist__form">
             <h3 class="specialist__title">Оставьте заявку на бесплатный выезд замерщика</h3>
             <div class="input-group specialist__input-group">
@@ -368,27 +368,35 @@
         <div class="desktop-container fantasy__desktop-container">
           <div class="fantasy__description-col">
             <h2 class="fantasy__title">Мы реализуем ваши самые смелые фантазии</h2>
-            <ul>
-              <li class = "checked">Американская классика</li>
-              <li>Empire</li>
-              <li>Classical</li>
-              <li>Loft</li>
-              <li>Minimalism</li>
-              <li>Provence</li>
-              <li>Romanticism</li>
-              <li>Scandinavian style</li>
-              <li>Mediterranean style</li>
-              <li>High tech</li>
-              <li>Elictricism</li>
+            <ul class="options fantasy__options">
+              <li class="options__option active">Американская классика</li>
+              <li class="options__option">Имперский стиль</li>
+              <li class="options__option">Классика</li>
+              <li class="options__option">Лофт</li>
+              <li class="options__option">Минимализм</li>
+              <li class="options__option">Прованс</li>
+              <li class="options__option">Романтизм</li>
+              <li class="options__option">Скандинавский стиль</li>
+              <li class="options__option">Средиземноморский стиль</li>
+              <li class="options__option">Хайтек</li>
+              <li class="options__option">Эклектизм</li>
             </ul>
           </div>
           <div class="fantasy__image-left-col">
-            <div class="fant_images--col-left1"></div>
-            <div class="fant_images--col-left2"></div>
+            <div class="left-col__image left-col__image--first">
+              <img src="../img/fantasy/fantasy-1.jpg" alt="">
+            </div>
+            <div class="left-col__image left-col__image--second">
+              <img src="../img/fantasy/fantasy-2.jpg" alt="">
+            </div>
           </div>
           <div class="fantasy__image-right-col">
-              <div class="fant_images--col-right1"></div>
-              <div class="fant_images--col-right2"></div>
+              <div class="right-col__image right-col__image--first">
+                <img src="../img/fantasy/fantasy-3.jpg" alt="">
+              </div>
+              <div class="right-col__image right-col__image--second">
+                <img src="../img/fantasy/fantasy-4.jpg" alt="">
+              </div>
           </div>
         </div>
         <!-- /.desktop-container -->

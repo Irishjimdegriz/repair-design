@@ -1,13 +1,62 @@
 .fantasy
+  &>.container
+    width: 100%
+    max-width: 100%
   &__desktop-container
     display: flex
     width: 100%
-    background: url("../img/fantasy/fantasy-bg.jpg") no-repeat center
+    background: $dark url("../img/fantasy/fantasy-bg.png") no-repeat center
+    position: relative
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background-color: rgba($dark, 0.7)
     //background-position-y: 47%;
+  &__mobile-container
+    display: none
+  &__description_col
+    margin-left: 5rem
   &__title
-      font-size: 27px
-      line-height: 37px
-      text-transform: uppercase
-      font-family: 'Yeseva One', sans-serif
-      color: $primary
-      width: 49%
+    margin-bottom: 3.6rem
+    font-size: 27px
+    line-height: 37px
+    text-transform: uppercase
+    font-family: 'Yeseva One', sans-serif
+    color: $primary
+    width: 100%
+    max-width: 31rem
+  &__options
+    padding: 0
+    list-style: none
+    font-family: 'Futura Demi', sans-serif
+    font-size: 1.55rem
+    line-height: 1.2rem
+    color: $light
+  &__image-left-col
+    margin-left: 31.9rem
+  &__image-right-col
+    margin-left: 0.4rem
+.options
+  &__option
+    margin-bottom: 2.38rem
+.left-col__image
+  &--first
+    position: absolute
+    top: -10.8rem
+    left: 39.5rem
+  &--second
+    position: absolute
+    top: 31.8rem
+    left: 39.5rem
+.right-col__image
+  &--first
+    position: absolute
+    top: -16rem
+  &--second
+    position: absolute
+    top: 6.1rem
