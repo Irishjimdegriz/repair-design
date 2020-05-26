@@ -1,0 +1,139 @@
+.specialist
+  padding-top: 11.6rem
+  margin-left: -13.2rem
+  &>.container
+    display: flex
+    align-items: center
+    justify-content: space-around
+  &__form
+    background-color: $dark
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 61rem
+  &__title
+    font-family: "Futura Demi", cursive
+    font-weight: normal
+    font-size: 1.428rem
+    text-align: center
+    max-width: 20rem
+    margin: auto
+    margin-top: 0
+    margin-bottom: 2.914rem
+    padding-top: 1.8rem
+    color: $light
+    line-height: 1.8rem
+  &__input-group
+    display: flex
+    flex-direction: column    
+    flex-basis: 80%
+    margin: auto
+    margin-bottom: 3.5rem
+    &--last
+      margin-bottom: 1.3rem
+  &__policy
+    flex-basis: 100%
+    color: $light
+    margin-left: 3.5rem
+    margin-bottom: 2.7rem
+    &-label
+      margin-top: 0
+      font-size: 1.142rem
+  &__button
+    margin-bottom: 2rem
+    margin-left: 17.6rem
+    padding: 1.25rem 2.6rem
+    font-size: 1rem
+    outline: none
+  &__input
+    padding-top: 0.2rem
+.actions
+  margin: 0
+  padding: 0
+  list-style: none
+  counter-reset: requestCounter
+  position: relative
+  width: 100%
+  background-image: url('../img/specialist/building.png'), url('../img/specialist/circle.svg')
+  background-repeat: no-repeat, no-repeat
+  background-position: 0 0, 0 55px
+  height: 58rem
+  &__action
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    height: 42px
+    font-family: 'Futura Book', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 1.314rem
+    line-height: 1.5rem
+    text-align: left
+    color: $dark
+    &::before
+      counter-increment: requestCounter
+      content: "0" counter(requestCounter)
+      position: absolute
+      top: 0
+      left: -60px
+      width: 42px
+      height: 42px
+      margin-right: 17px
+      font-family: 'Yeseva One', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 42px
+      text-align: center
+      color: #fff
+      background-color: $primary
+      border-radius: 50%
+.action
+  &--first
+    top: 115px
+    left: 415px
+    max-width: 24rem
+    &::before
+      top: 3px
+  &--second
+    top: 236px
+    left: 489px
+    &::before
+      top: -7px
+  &--third
+    top: 401px
+    left: 511px
+    &::before
+      top: -11px
+      left: -57px
+  &--fourth
+    top: 550px
+    left: 446px
+    max-width: 19rem
+    &::before
+      left: -57px
+.discount
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-left: -1.4rem
+  margin-top: 2rem
+  &__description
+    font-family: 'Futura Demi'
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 25px
+    color: $primary
+    max-width: 23rem
+    margin-top: 1.4rem
+  &-icon
+    width: 5.2rem
+    height: 5.05rem
+    margin-right: 25px
+    padding: 20px 16px
+    //background-color: $primary
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2)
+    border-radius: 50%
+    background: $primary url('../img/specialist/piggy-bank.svg') no-repeat center
