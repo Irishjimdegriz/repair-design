@@ -834,7 +834,8 @@ img {
 
 .video__play {
   margin: auto;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -1149,7 +1150,13 @@ img {
   margin-bottom: 4rem;
   padding-bottom: 4rem;
   max-width: 66.07rem;
-  height: 33.12rem; }
+  height: 33.12rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../img/yandex-before-load-marker.png") #ffffff no-repeat;
+  background-position: center center;
+  background-size: cover; }
 
 .footer__mobile-map {
   display: none; }
@@ -1202,6 +1209,69 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
+
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55); }
+  .loader:after, .loader:before {
+    box-sizing: border-box; }
+  .loader.is-active {
+    top: 0;
+    opacity: 1; }
+  .loader-default:after {
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    content: '';
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+    border: solid 8px #ffffff;
+    border-left-color: transparent;
+    border-radius: 50%; }
+
+#map {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 20em;
+  cursor: pointer;
+  background-color: transparent; }
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
+
+@keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
 
 .clients {
   margin-top: 37.4rem;
@@ -1531,6 +1601,19 @@ img {
     box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
     border-radius: 50%;
     background: #E3B873 url("../img/specialist/piggy-bank.svg") no-repeat center; }
+
+.fantasy__desktop-container {
+  display: flex;
+  width: 100%;
+  background: url("../img/fantasy/fantasy-bg.jpg") no-repeat center; }
+
+.fantasy__title {
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', sans-serif;
+  color: #E3B873;
+  width: 49%; }
 
 @media screen and (max-width: 1600px) {
   .col-40 {

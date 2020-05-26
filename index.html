@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson 27</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/lazysizes.min.js" async></script>
 </head>
 <body>
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(64345651, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/64345651" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/watch.js", "ym"); ym(64345651, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/64345651" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   <header class="header">
     <div class="container">
        <div class="menu">
@@ -179,9 +179,9 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
                   <!-- Slides -->
-                  <div class="swiper-slide swiper-slide__image"><img class='swiper-image' src="img/finished/finished-1.jpg" alt="Finished 1"></div>
-                  <div class="swiper-slide swiper-slide__image"><img src="img/finished/finished-1.jpg" alt="Finished 2"></div>
-                  <div class="swiper-slide swiper-slide__image"><img src="img/finished/finished-1.jpg" alt="Finished 3"></div>
+                  <div class="swiper-slide swiper-slide__image"><img class='swiper-image lazyload' data-src="img/finished/finished-1.jpg" alt="Finished 1"></div>
+                  <div class="swiper-slide swiper-slide__image"><img data-src="img/finished/finished-1.jpg" class="lazyload" alt="Finished 2"></div>
+                  <div class="swiper-slide swiper-slide__image"><img data-src="img/finished/finished-1.jpg" class="lazyload" alt="Finished 3"></div>
               </div>
             </div>
           </div>
@@ -243,7 +243,7 @@
         <div class="row">
           <div class="col-30">
             <div class="card types__card">
-              <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
+              <img data-src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image lazyload">
               <div class="card__text">
                 <h3 class="card__title">Косметический ремонт</h3>
                 <!-- /.card__title -->
@@ -267,7 +267,7 @@
           <!-- /.col -->
           <div class="col-30">
             <div class="card types__card">
-              <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image">
+              <img data-src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image lazyload">
               <div class="card__text">
                 <h3 class="card__title">Капитальный ремонт</h3>
                 <!-- /.card__title -->
@@ -291,7 +291,7 @@
           <!-- /.col -->
           <div class="col-30">
             <div class="card types__card">
-              <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
+              <img data-src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image lazyload">
               <div class="card__text">
                 <h3 class="card__title">Дизайнерский ремонт</h3>
                 <!-- /.card__title -->
@@ -363,13 +363,49 @@
       </div>
     </section>
     <!-- /.section specialist -->
+    <section class="section fantasy">
+      <div class="container">
+        <div class="desktop-container fantasy__desktop-container">
+          <div class="fantasy__description-col">
+            <h2 class="fantasy__title">Мы реализуем ваши самые смелые фантазии</h2>
+            <ul>
+              <li class = "checked">Американская классика</li>
+              <li>Empire</li>
+              <li>Classical</li>
+              <li>Loft</li>
+              <li>Minimalism</li>
+              <li>Provence</li>
+              <li>Romanticism</li>
+              <li>Scandinavian style</li>
+              <li>Mediterranean style</li>
+              <li>High tech</li>
+              <li>Elictricism</li>
+            </ul>
+          </div>
+          <div class="fantasy__image-left-col">
+            <div class="fant_images--col-left1"></div>
+            <div class="fant_images--col-left2"></div>
+          </div>
+          <div class="fantasy__image-right-col">
+              <div class="fant_images--col-right1"></div>
+              <div class="fant_images--col-right2"></div>
+          </div>
+        </div>
+        <!-- /.desktop-container -->
+        <div class="mobile-container fantasy__mobile-container">
+          <!-- слайдер с кастомными кнопками -->
+        </div>
+        <!-- /.mobile-container -->
+      </div>
+    </section>
+    <!-- /.section fantasy -->
     <section class="section project">
       <div class="container project__container">
         <div class="section-title project__section-title">
           <h2 class="section-title__heading">Дизайн проект</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image">
-            <img src="img/project-tools.svg" alt="project">
+            <img data-src="img/project-tools.svg" class="lazyload" alt="project">
           </div>
           <!-- /.section-title__image -->
         </div>
@@ -380,7 +416,7 @@
         <div class="row project__row">
           <div class="col-30 project__col">
             <div class="card project__card">
-              <img src="img/projects/project-1.jpg" alt="Минимальный" class="card__image">
+              <img data-src="img/projects/project-1.jpg" alt="Минимальный" class="card__image lazyload">
               <div class="card__text project-card__text">
                 <h3 class="card__title project__card-title">Минимальный</h3>
                 <!-- /.card__title -->
@@ -403,7 +439,7 @@
           </div>
           <div class="col-30 project__col">
             <div class="card project__card">
-              <img src="img/projects/project-2.jpg" alt="Стандартный" class="card__image">
+              <img data-src="img/projects/project-2.jpg" alt="Стандартный" class="card__image lazyload">
               <div class="card__text project-card__text">
                 <h3 class="card__title project__card-title">Стандартный</h3>
                 <!-- /.card__title -->
@@ -432,7 +468,7 @@
           </div>
           <div class="col-30 project__col">
             <div class="card project__card">
-              <img src="img/projects/project-3.jpg" alt="Полный" class="card__image">
+              <img data-src="img/projects/project-3.jpg" alt="Полный" class="card__image lazyload">
               <div class="card__text project-card__text">
                 <h3 class="card__title project__card-title">Полный</h3>
                 <!-- /.card__title -->
@@ -576,7 +612,7 @@
           <h2 class="section-title__heading team__section-title-heading">Наша команда</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image team__section-title-image">
-            <img src="img/team.svg" alt="project">
+            <img data-src="img/team.svg" alt="project" class="lazyload">
           </div>
           <!-- /.section-title__image -->
         </div>
@@ -588,10 +624,10 @@
           <div class="card-wrap">
             <div class="profile team__profile">
               <div class="profile__image-wrap image-wrap">
-                <img src="img/team/person-1.jpg" alt="" class="profile__image">
+                <img data-src="img/team/person-1.jpg" alt="" class="profile__image lazyload">
               </div>
               <div class="profile__logo-wrap logo-wrap">
-                <img src="img/idea.svg" alt="" class="profile__logo">
+                <img data-src="img/idea.svg" alt="" class="profile__logo lazyload">
               </div>
               <div class="profile__title">
                 <div class="title-wrap--light">
@@ -606,7 +642,7 @@
             <!-- /.team__profile -->
             <div class="profile team__profile">
               <div class="profile__image-wrap image-wrap">
-                <img src="img/team/person-2.jpg" alt="" class="profile__image">
+                <img data-src="img/team/person-2.jpg" alt="" class="profile__image lazyload">
               </div>
               <div class="profile__logo-wrap logo-wrap">
                 <img src="img/pen.svg" alt="" class="profile__logo">
@@ -624,10 +660,10 @@
             <!-- /.team__profile -->
             <div class="profile team__profile">
               <div class="profile__image-wrap image-wrap">
-                <img src="img/team/person-3.jpg" alt="" class="profile__image">
+                <img data-src="img/team/person-3.jpg" alt="" class="profile__image lazyload">
               </div>
               <div class="profile__logo-wrap logo-wrap">
-                <img src="img/portfolio.svg" alt="" class="profile__logo">
+                <img data-src="img/portfolio.svg" alt="" class="profile__logo lazyload">
               </div>
               <div class="profile__title">
                 <div class="title-wrap--light">
@@ -656,7 +692,7 @@
           <h2 class="section-title__heading clients__section-title__heading">Наши клиенты</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image clients__section-title-image">
-            <img src="img/clients.svg" alt="camera">
+            <img data-src="img/clients.svg" class="lazyload" alt="camera">
           </div>
           <!-- /.section-title__image -->
         </div>
@@ -667,18 +703,18 @@
           <div class="review">
             <div class="client-info review__client-info">
               <div class="review-image-wrap">
-                <img class="review-image" src="img/customers/customer-1.jpg" alt="">
+                <img class="review-image lazyload" data-src="img/customers/customer-1.jpg" alt="">
               </div>
               <p class="review-title">Савельева Екатерина Львовна</p>
             </div>
             <p class="review-text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. <br class="break">Я рекомендую этих мастеров.</p>
             <div class="review-info">
               <div class="review-data">
-                <img class="review-data__image" src="img/square.svg" alt="">
+                <img class="review-data__image lazyload" data-src="img/square.svg" alt="">
                 <p class="review-data__info">40 м<sup>2</sup></p>
               </div>
               <div class="review-data">
-                <img class="review-data__image" src="img/duration.svg" alt="">
+                <img class="review-data__image lazyload" data-src="img/duration.svg" alt="">
                 <p class="review-data__info duration">48 дней</p>
               </div>
             </div>
@@ -686,18 +722,18 @@
           <div class="review">
             <div class="client-info review__client-info">
               <div class="review-image-wrap">
-                <img class="review-image" src="img/customers/customer-2.jpg" alt="">
+                <img class="review-image lazyload" data-src="img/customers/customer-2.jpg" alt="">
               </div>
               <p class="review-title">Большов Михаил Анатольевич</p>
             </div>
             <p class="review-text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. <br class="break">Я рекомендую этих мастеров.</p>
             <div class="review-info">
               <div class="review-data">
-                <img class="review-data__image" src="img/square.svg" alt="">
+                <img class="review-data__image lazyload" data-src="img/square.svg" alt="">
                 <p class="review-data__info">90 м<sup>2</sup></p>
               </div>
               <div class="review-data">
-                <img class="review-data__image" src="img/duration.svg" alt="">
+                <img class="review-data__image lazyload" data-src="img/duration.svg" alt="">
                 <p class="review-data__info duration">128 дней</p>
               </div>
             </div>
@@ -705,18 +741,18 @@
           <div class="review">
             <div class="client-info review__client-info">
               <div class="review-image-wrap">
-                <img class="review-image" src="img/customers/customer-3.jpg" alt="">
+                <img class="review-image lazyload" data-src="img/customers/customer-3.jpg" alt="">
               </div>
               <p class="review-title">Хасанов Даниил Муратович</p>
             </div>
             <p class="review-text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. <br class="break">Цены демократические.</p>
             <div class="review-info">
               <div class="review-data">
-                <img class="review-data__image" src="img/square.svg" alt="">
+                <img class="review-data__image lazyload" data-src="img/square.svg" alt="">
                 <p class="review-data__info">56 м<sup>2</sup></p>
               </div>
               <div class="review-data">
-                <img class="review-data__image" src="img/duration.svg" alt="">
+                <img class="review-data__image lazyload" data-src="img/duration.svg" alt="">
                 <p class="review-data__info duration">86 дней</p>
               </div>
             </div>
@@ -760,14 +796,16 @@
           </div>
           <div class="footer__logo-container">
             <div class="footer__logo-wrap logo-wrap">
-              <img src="img/mail.svg" alt="" class="footer__logo">
+              <img data-src="img/mail.svg" alt="" class="footer__logo lazyload">
             </div>
             <div class="footer__logo-wrap logo-wrap">
-              <img src="img/instagram.svg" alt="" class="footer__logo">
+              <img data-src="img/instagram.svg" alt="" class="footer__logo lazyload">
             </div>
           </div>
         </div>
-        <div class="api-map footer__api-map" id="map">
+        <div class="api-map footer__api-map"> <!-- id="map"> -->
+          <div class="loader loader-default"></div>
+          <div id="map"></div>
           <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa44096e6d0537820d06e0618a2177606b5af0f797a6836a1ee0587a90e281fe6&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script> -->
         </div>
         <!-- <div class="mobile-map footer__mobile-map" id="mobile-map">
@@ -832,13 +870,15 @@
   <div class="scroll-up-container">
     <a href="#hero" class="scroll-up"></a>
   </div>
-  <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <!-- <script src="js/swiper.js"></script> -->
+  <!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=6fdbd675-9305-4e9b-8942-d69cd6eef340&lang=ru_RU">
-  </script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=6fdbd675-9305-4e9b-8942-d69cd6eef340&lang=ru_RU" async>
+  </script> -->
   <script src="js/main.js"></script>
 </body>
 </html>

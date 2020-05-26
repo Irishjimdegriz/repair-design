@@ -63,6 +63,12 @@
     padding-bottom: 4rem
     max-width: 66.07rem
     height: 33.12rem
+    position: relative
+    overflow: hidden
+    cursor: pointer
+    background: url('../img/yandex-before-load-marker.png') #ffffff no-repeat
+    background-position: center center
+    background-size: cover
   &__mobile-map
     display: none
   &__menu
@@ -109,3 +115,52 @@
       width: 100%
       height: 100%
       background-color: rgba($dark, 0.7)
+.loader
+  position: absolute
+  z-index: 15
+  top: -100%
+  left: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba(0,0,0,.55)
+  &:after, &:before
+    box-sizing: border-box
+  &.is-active
+    top: 0
+    opacity: 1
+  &-default
+    &:after 
+      position: absolute
+      top: calc(50% - 24px)
+      left: calc(50% - 24px)
+      width: 48px
+      height: 48px
+      content: ''
+      animation: rotation 1s linear infinite
+      border: solid 8px #ffffff
+      border-left-color: transparent
+      border-radius: 50%
+#map
+  position: relative
+  z-index: 7
+  width: 100%
+  height: 20em
+  cursor: pointer
+  background-color: transparent
+
+@keyframes rotation
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(359deg)
+
+@keyframes blink
+  from
+    opacity: .5
+  to
+    opacity: 1
