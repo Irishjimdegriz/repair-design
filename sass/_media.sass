@@ -20,6 +20,8 @@
   .specialist
     &__button
       padding: 1.25rem 2.1rem
+    &__actions
+      margin-left: -7rem
     
 @media screen and ( max-width: 1305px)
   .title
@@ -62,11 +64,11 @@
   .specialist
     &__button
       padding: 1.25rem 2rem
-
-@media screen and ( max-width: 1220px)
-  .specialist
-    &__actions
-      margin-left: -7rem
+  .fantasy
+    padding-bottom: 5rem
+  .left-col__image
+    &--second
+      top: 45.8rem
 
 @media screen and ( max-width: 1130px)
   .title
@@ -84,10 +86,17 @@
       max-width: 45rem
     &__button
       padding: 1.25rem 0.8rem
+  .review
+    &-title
+      font-size: 1.1rem
+    &-image-wrap
+      margin-right: -1rem
+    &-text
+      font-size: 1rem
 
 @media screen and ( max-width: 1080px)
   .team
-    padding-bottom: 4rem
+    padding-bottom: 14rem
     &__section-title-heading
       font-size: 1.8rem
       margin-bottom: 1rem
@@ -199,6 +208,12 @@
   #map
     width: 360px
     height: 295px !important
+  .review
+    &-text
+      font-size: 0.9rem
+    &-data
+      &__info
+        font-size: 0.88rem
 
 @media screen and ( max-width: 1030px )
   .specialist
@@ -213,6 +228,7 @@
       display: none
     &__content
       margin-left: 0
+      max-width: 36rem
     &__scroll-down
       &:hover
         cursor: default
@@ -224,9 +240,14 @@
   .steps
     display: none
   .project
-    color: $light
     background-color: $dark
-    padding-bottom: 50rem
+    padding-top: 6rem
+    padding-bottom: 154rem
+    &__section-title, &__description
+      color: $light
+    &__row
+      flex-direction: column
+      align-items: center
   .team
     padding-top: 2rem
     &__postscriptum
@@ -260,6 +281,11 @@
       left: 50%
       transform: translateX(-50%)
 
+@media screen and ( max-width: 920px)
+  .types
+    &__card
+      &__title
+        font-size: 0.99rem
 
 @media screen and ( max-width: 760px)
   .row
@@ -281,10 +307,9 @@
     display: inline !important
   .extra-items
     display: none 
-  .project
-    padding-bottom: 154rem
   .footer
     .anti-hero-container
+      margin: auto
       margin-top: -8.5rem
   .video
     &__play
@@ -299,6 +324,67 @@
       max-width: 89vw
   .team
     padding-bottom: 13rem
+  .control
+    background-color: $dark
+    color: $light
+    &>.container
+      width: 93%
+    &__section-title
+      margin-top: -28.6rem
+      &__heading
+        font-size: 1.8rem  
+      &-image
+        margin-bottom: 3.4rem
+    &__video
+      min-height: 17.2rem  
+      margin-bottom: 2.4rem
+    &__text
+      font-size: 1.15rem
+      line-height: 2rem
+      margin-bottom: 2.1rem
+      &::before
+        margin-bottom: 1.3rem
+    &__input-group
+      flex-basis: 100%
+      order: 2
+      &:first-of-type
+        margin-bottom: 4.9rem
+        order: 1
+      &:nth-of-type(2)
+        margin-left: 0
+    &__button
+      position: absolute
+      padding: 1.486rem 11.3rem
+      left: 50%
+      transform: translateX(-50%)
+      bottom: -1.5rem
+      order: 4
+    &__policy
+      order: 3
+      margin-top: 1rem
+      margin-bottom: 2.4rem
+      &-label
+        justify-content: flex-start
+        font-size: 1.35rem
+        margin-bottom: 5.5rem
+    &__label
+      margin-bottom: 2px
+      font-size: 1.2rem
+    &__input
+      font-size: 1.5rem
+      margin-top: -0.2rem
+    &__form
+      position: relative
+    .video
+      &__play
+        width: 5rem
+        height: 5rem
+  .types
+    &__section-title
+      margin-top: 6.3rem
+    &__card
+      &__title
+        font-size: 1.29rem
 
 @media screen and ( max-width: 570px)
   .contacts
@@ -340,7 +426,7 @@
   .project
     background-color: $dark
     padding-top: 2rem
-    padding-bottom: 134.5rem
+    padding-bottom: 149.5rem
     margin-bottom: 0
     &__description
       color: $light !important
@@ -375,6 +461,7 @@
       width: 111%
     &__col-30
       margin-bottom: 1.1rem !important
+      width: 85% !important
   .fantasy
     &__mobile-container
       max-width: 89vw
@@ -485,59 +572,11 @@
     //   margin-bottom: 5rem
   .steps
     display: none
-  .control
-    background-color: $dark
-    color: $light
-    &>.container
-      width: 93%
-    &__section-title
-      margin-top: -28.6rem
-      &__heading
-        font-size: 1.8rem  
-      &-image
-        margin-bottom: 3.4rem
-    &__video
-      min-height: 17.2rem  
-      margin-bottom: 2.4rem
-    &__text
-      font-size: 1.15rem
-      line-height: 2rem
-      margin-bottom: 2.1rem
-      &::before
-        margin-bottom: 1.3rem
-    &__input-group
-      flex-basis: 100%
-      order: 2
-      &:first-of-type
-        margin-bottom: 4.9rem
-        order: 1
-    &__button
-      position: absolute
-      padding: 1.486rem 11.3rem
-      left: 50%
-      transform: translateX(-50%)
-      bottom: -1.5rem
-      order: 4
-    &__policy
-      order: 3
-      margin-top: 1rem
-      margin-bottom: 2.4rem
-      &-label
-        justify-content: flex-start
-        font-size: 1.35rem
-        margin-bottom: 5.5rem
-    &__label
-      margin-bottom: 2px
-      font-size: 1.2rem
-    &__input
-      font-size: 1.5rem
-      margin-top: -0.2rem
-    &__form
-      position: relative
-    .video
-      &__play
-        width: 5rem
-        height: 5rem
+  .fantasy
+    &__swiper
+      &-button-next
+        margin-left: 1rem
+
 
 @media screen and ( max-width: 470px)
   .swiper
@@ -563,6 +602,12 @@
 @media screen and ( max-width: 380px)
   .control__button
     padding: 1.486rem 8.3rem
+  .fantasy
+    &__swiper
+      width: 265px
+      height: 195px
+      &-button-next
+        margin-left: -5.3rem
 
 @media screen and ( max-height: 540px )
   .hero

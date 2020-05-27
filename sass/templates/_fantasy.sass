@@ -56,12 +56,23 @@
     &:hover
       cursor: pointer
       color: $primary
-      border-bottom: 1px solid $primary
+      text-decoration: none
     &--active
+      position: relative
       cursor: pointer
       color: $primary
-      border-bottom: 1px solid $primary  
+      &::after
+        content: ""
+        width: 65%
+        height: 1px
+        background: $primary
+        position: absolute
+        bottom: -2px
+        left: 0
+      //border-bottom: 1px solid $primary  
   &__swiper
+    width: 340px
+    height: 242px
     &-container
       width: 340px
       height: 242px

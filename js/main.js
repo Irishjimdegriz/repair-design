@@ -1,5 +1,4 @@
 const swiperLabels = ['Выезд на замер <br>помещения', 'Составление<br> сметы', 'Разработка<br>  дизайн проекта', 'Закупка расходных<br> материалов', 'Ремонтно-отделочные<br> работы', 'Приемка-сдача <br>работ'];
-let activeLink;
 
 $(document).ready(function () {
   const modal = $('.modal'),
@@ -14,10 +13,12 @@ $(document).ready(function () {
         videoPlay = $('.video__play'),
         fantasyLinks = $('.fantasy__link');
 
+let activeLink; 
+
   fantasyLinks.on('click', (event) => {
-    if (activeLink !== undefined) {
-      activeLink.removeClass('fantasy__link--active');
-    }
+    fantasyLinks.each(function() {
+      $(this).removeClass('fantasy__link--active');
+    })
     let target = $(event.target);
     target.addClass('fantasy__link--active');
     activeLink = target;
@@ -521,6 +522,7 @@ function init () {
       // её "ножки" (точки привязки).
       iconImageOffset: [-25, -50],
   });
+  myMapTemp.behaviors.disable('scrollZoom');
   myMapTemp.geoObjects.add(myPlacemarkTemp); // помещаем флажок на карту
  
   // Получаем первый экземпляр коллекции слоев, потом первый слой коллекции
