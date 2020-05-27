@@ -114,6 +114,8 @@
       margin-left: 3rem
       margin-bottom: 12.3rem
       max-width: 25rem
+      &:first-of-type
+        margin-left: 3rem
     &__postscriptum
       margin-top: 0
       color: $light
@@ -248,8 +250,9 @@
     &__row
       flex-direction: column
       align-items: center
+    &__col
+      margin-bottom: 5rem !important
   .team
-    padding-top: 2rem
     &__postscriptum
       display: none
   .clients
@@ -385,6 +388,9 @@
     &__card
       &__title
         font-size: 1.29rem
+  .project
+    &__col
+      margin-bottom: 1rem !important
 
 @media screen and ( max-width: 570px)
   .contacts
@@ -461,7 +467,8 @@
       width: 111%
     &__col-30
       margin-bottom: 1.1rem !important
-      width: 85% !important
+      width: 90% !important
+      margin-left: 1.3rem !important
   .fantasy
     &__mobile-container
       max-width: 89vw
@@ -509,7 +516,7 @@
       margin-top: -12.1rem
       padding-left: 2.4rem
     &__col
-      margin-bottom: 0 !important
+      margin-bottom: -0.9rem !important
     &__section-title
       &__image
         margin-bottom: 2rem
@@ -591,6 +598,8 @@
       &__text
         &:nth-of-type(2n)
           padding-left: 0rem
+  .project
+    padding-bottom: 139.5rem
 
 @media screen and ( max-width: 400px)
   .control__button
@@ -598,6 +607,8 @@
   .footer
     &__api-map
       max-width: 25rem
+  .project
+    padding-bottom: 132.5rem
 
 @media screen and ( max-width: 380px)
   .control__button
@@ -608,6 +619,14 @@
       height: 195px
       &-button-next
         margin-left: -5.3rem
+
+@media screen and ( max-width: 360px)
+  .project
+    padding-bottom: 125.5rem
+
+@media screen and ( max-width: 340px)
+  .project
+    padding-bottom: 120.5rem
 
 @media screen and ( max-height: 540px )
   .hero

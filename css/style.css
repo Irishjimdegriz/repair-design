@@ -727,7 +727,7 @@ img {
     height: 3.46rem;
     background-color: #131313; }
   .hero__content {
-    max-width: 47.85rem;
+    max-width: 39.85rem;
     margin-left: 4.28rem;
     position: relative; }
   .hero__title {
@@ -1083,9 +1083,7 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   width: 100% !important;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content; }
+  height: 17rem; }
 
 .swiper-steps-right-wrapper {
   padding-top: 17.2rem; }
@@ -1094,7 +1092,11 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 100%; }
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden; }
 
 .swiper-custom-bullet {
   background-color: transparent;
@@ -1879,6 +1881,8 @@ img {
       margin-left: 3rem;
       margin-bottom: 12.3rem;
       max-width: 25rem; }
+      .team__profile:first-of-type {
+        margin-left: 3rem; }
     .team__postscriptum {
       margin-top: 0;
       color: #fff; }
@@ -2005,10 +2009,10 @@ img {
     .project__row {
       flex-direction: column;
       align-items: center; }
-  .team {
-    padding-top: 2rem; }
-    .team__postscriptum {
-      display: none; }
+    .project__col {
+      margin-bottom: 5rem !important; }
+  .team__postscriptum {
+    display: none; }
   .clients {
     display: none; }
   .specialist {
@@ -2128,7 +2132,9 @@ img {
   .types__section-title {
     margin-top: 6.3rem; }
   .types__card__title {
-    font-size: 1.29rem; } }
+    font-size: 1.29rem; }
+  .project__col {
+    margin-bottom: 1rem !important; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -2203,7 +2209,8 @@ img {
       width: 111%; }
     .types__col-30 {
       margin-bottom: 1.1rem !important;
-      width: 85% !important; }
+      width: 90% !important;
+      margin-left: 1.3rem !important; }
   .fantasy__mobile-container {
     max-width: 89vw; }
   .card__text {
@@ -2246,7 +2253,7 @@ img {
     margin-top: -12.1rem;
     padding-left: 2.4rem; }
   .project__col {
-    margin-bottom: 0 !important; }
+    margin-bottom: -0.9rem !important; }
   .project__section-title__image {
     margin-bottom: 2rem; }
   .col-30 {
@@ -2306,13 +2313,17 @@ img {
 
 @media screen and (max-width: 435px) {
   .swiper-slide__text:nth-of-type(2n) {
-    padding-left: 0rem; } }
+    padding-left: 0rem; }
+  .project {
+    padding-bottom: 139.5rem; } }
 
 @media screen and (max-width: 400px) {
   .control__button {
     padding: 1.486rem 11.3rem; }
   .footer__api-map {
-    max-width: 25rem; } }
+    max-width: 25rem; }
+  .project {
+    padding-bottom: 132.5rem; } }
 
 @media screen and (max-width: 380px) {
   .control__button {
@@ -2322,6 +2333,14 @@ img {
     height: 195px; }
     .fantasy__swiper-button-next {
       margin-left: -5.3rem; } }
+
+@media screen and (max-width: 360px) {
+  .project {
+    padding-bottom: 125.5rem; } }
+
+@media screen and (max-width: 340px) {
+  .project {
+    padding-bottom: 120.5rem; } }
 
 @media screen and (max-height: 540px) {
   .hero__scroll-down {
