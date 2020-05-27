@@ -1,4 +1,5 @@
 const swiperLabels = ['Выезд на замер <br>помещения', 'Составление<br> сметы', 'Разработка<br>  дизайн проекта', 'Закупка расходных<br> материалов', 'Ремонтно-отделочные<br> работы', 'Приемка-сдача <br>работ'];
+let activeLink;
 
 $(document).ready(function () {
   const modal = $('.modal'),
@@ -10,7 +11,17 @@ $(document).ready(function () {
         modalAccept = $('.modal-accept'),
         acceptCloseBtn = $('.modal-accept__close'),
         modalResponse = $('.modal-response'),
-        videoPlay = $('.video__play');
+        videoPlay = $('.video__play'),
+        fantasyLinks = $('.fantasy__link');
+
+  fantasyLinks.on('click', (event) => {
+    if (activeLink !== undefined) {
+      activeLink.removeClass('fantasy__link--active');
+    }
+    let target = $(event.target);
+    target.addClass('fantasy__link--active');
+    activeLink = target;
+  });
 
   const switchModal = () => {
     modal.toggleClass('modal--visible');
@@ -160,6 +171,17 @@ $(document).ready(function () {
       swiper.pagination.dynamicBullets = true;
     }
 
+    let swiperFantasy = new Swiper ('.fantasy__swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.fantasy__swiper-button-next',
+        prevEl: '.fantasy__swiper-button-prev',
+      },
+      swiping: {
+        noSwiping: true
+      }
+    })
+
     new WOW().init();
 
     $('.modal__form').validate({
@@ -285,6 +307,69 @@ $(document).ready(function () {
             //controlResponse.addClass('response--visible');
             modalAccept.addClass('modal--visible');
             ym(64345651,'reachGoal','callback');
+            return true;
+          }
+        });
+      }
+    });
+
+    $('.specialist__form').validate({
+      errorClass: 'invalid',
+      errorElement: "div",
+      errorPlacement: function(error, element) {
+        element.after(error);
+      },
+      rules: {
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        // simple rule, converted to {required:true}
+        userPhone: {
+          required: true,
+          minlength: 17
+        },
+        // compound rule
+        userEmail: {
+          required: true,
+          email: true
+        },
+        specialistPolicyCheckbox: {
+          required: true
+        }
+      },
+      messages: {
+        userName: {
+          required: "Заполните поле",
+          minlength: "Имя слишком короткое",
+          maxlength: "Имя слишком длинное"
+        },
+        userPhone: {
+          required: "Заполните поле",
+          minlength: "Телефон слишком короткий"
+        },
+        userEmail: {
+            required: "Заполните поле",
+            email: "Введите корректный email"
+        },
+        specialistPolicyCheckbox: {
+          required: "Подтвердите согласие с обработкой данных",
+        }
+      },
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(form).serialize(),
+          success: function (response) {
+            console.log("Ajax сработал. Ответ сервера: " + response);
+            //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+            $(form)[0].reset();
+            modal.removeClass('modal--visible');
+            modalAccept.addClass('modal--visible');
+            //ym(64345651,'reachGoal','send-button');
+            ym(64345651,'reachGoal','request');
             return true;
           }
         });

@@ -13,6 +13,13 @@
       font-size: 1.05rem
   .break
     display: none
+
+@media screen and ( max-width: 1400px)
+  .fantasy__image-right-col
+    display: none
+  .specialist
+    &__button
+      padding: 1.25rem 2.1rem
     
 @media screen and ( max-width: 1305px)
   .title
@@ -52,6 +59,14 @@
   .footer
     .anti-hero
       padding-bottom: 6rem
+  .specialist
+    &__button
+      padding: 1.25rem 2rem
+
+@media screen and ( max-width: 1220px)
+  .specialist
+    &__actions
+      margin-left: -7rem
 
 @media screen and ( max-width: 1130px)
   .title
@@ -68,10 +83,11 @@
     &__form
       max-width: 45rem
     &__button
-      padding: 1.25rem 1.3rem
+      padding: 1.25rem 0.8rem
 
 @media screen and ( max-width: 1080px)
   .team
+    padding-bottom: 4rem
     &__section-title-heading
       font-size: 1.8rem
       margin-bottom: 1rem
@@ -89,6 +105,9 @@
       margin-left: 3rem
       margin-bottom: 12.3rem
       max-width: 25rem
+    &__postscriptum
+      margin-top: 0
+      color: $light
   .card-wrap
     display: flex
     justify-content: center
@@ -161,6 +180,8 @@
       width: 3.2rem
       height: 3.2rem
       margin-right: 1.9rem
+    &__menu
+      width: 92%
     .anti-hero
       margin-top: -20rem
       background-image: none
@@ -173,11 +194,16 @@
         margin-top: 3.4rem
   .loader
     height: 295px
+  .clients
+    margin-top: 2.7rem
+  #map
+    width: 360px
+    height: 295px !important
 
 @media screen and ( max-width: 1030px )
   .specialist
     &__button
-      padding: 1.25rem 1rem
+      padding: 1.25rem 0.6rem
 
 @media screen and ( max-width: 992px)
   .nav
@@ -193,9 +219,13 @@
   .button, .phone, .logo
     &:hover
       cursor: default
+  .types
+    padding-bottom: 20rem
   .steps
     display: none
   .project
+    color: $light
+    background-color: $dark
     padding-bottom: 50rem
   .team
     padding-top: 2rem
@@ -217,10 +247,19 @@
       margin: auto
       margin-top: 4rem
   .fantasy
+    background-image: none
+    background: $dark
+    position: relative
     &__desktop-container
       display: none
     &__mobile-container
       display: block
+      position: absolute
+      max-width: 50vw
+      top: -26.2rem
+      left: 50%
+      transform: translateX(-50%)
+
 
 @media screen and ( max-width: 760px)
   .row
@@ -255,6 +294,11 @@
     &__api-map
       margin-bottom: 11.9rem
       width: 100%
+  .fantasy
+    &__mobile-container
+      max-width: 89vw
+  .team
+    padding-bottom: 13rem
 
 @media screen and ( max-width: 570px)
   .contacts
@@ -296,7 +340,7 @@
   .project
     background-color: $dark
     padding-top: 2rem
-    padding-bottom: 129rem
+    padding-bottom: 134.5rem
     margin-bottom: 0
     &__description
       color: $light !important
@@ -304,14 +348,36 @@
       max-width: 50rem !important
       line-height: 1.8rem !important
       letter-spacing: 0.03rem
+    &__section-title
+      margin-top: 13.2rem
     &__section-title>.section-title__heading
         font-size: 1.8rem
+        margin-bottom: 1.3rem
         color: $light
   .types
+    padding-bottom: 16rem
     &__section-title
       font-size: 1.2rem
       margin-bottom: 3.4rem
       margin-top: 6.3rem
+      &__heading
+        font-size: 1.82rem
+        margin-bottom: 1.4rem
+    &__card
+      &__text
+        margin-top: -12.6rem !important
+        padding-top: 1.8rem !important
+        padding-left: 3.1rem !important
+      &__price-tag
+        padding: 0.95rem 2.5rem !important
+    & .row
+      margin-left: -2rem
+      width: 111%
+    &__col-30
+      margin-bottom: 1.1rem !important
+  .fantasy
+    &__mobile-container
+      max-width: 89vw
   .card
     &__text
       max-width: 22.8rem
@@ -342,18 +408,24 @@
     &__container
       width: 95%
     &__description
-      width: 79.5%
+      width: 84.5%
+      margin-bottom: 3rem
     &__row
-      width: 83%
+      width: 93%
       margin: 0
       //padding-left: 2%
     &__card
       margin-bottom: 6.2rem
+      &-title
+        color: $dark
     &-card__text
-      margin-top: -12.6rem
+      margin-top: -12.1rem
       padding-left: 2.4rem
     &__col
       margin-bottom: 0 !important
+    &__section-title
+      &__image
+        margin-bottom: 2rem
   .col
     &-30
       margin-bottom: 1.3rem
@@ -419,6 +491,7 @@
     &>.container
       width: 93%
     &__section-title
+      margin-top: -28.6rem
       &__heading
         font-size: 1.8rem  
       &-image

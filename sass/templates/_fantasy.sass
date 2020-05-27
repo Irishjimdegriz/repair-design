@@ -1,22 +1,22 @@
 .fantasy
-  &>.container
+  position: relative
+  z-index: 1
+  background: $dark url("../img/fantasy/fantasy-bg.png") no-repeat center
+  background-size: cover
+  &::before
+    content: ''
+    position: absolute
+    z-index: 0
+    left: 0
+    bottom: 0
     width: 100%
-    max-width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.7)
   &__desktop-container
+    position: relative
     display: flex
     width: 100%
-    background: $dark url("../img/fantasy/fantasy-bg.png") no-repeat center
-    position: relative
-    z-index: 1
-    &::before
-      content: ''
-      position: absolute
-      left: 0
-      bottom: 0
-      width: 100%
-      height: 100%
-      background-color: rgba($dark, 0.7)
-    //background-position-y: 47%;
+    z-index: 2
   &__mobile-container
     display: none
   &__description_col
@@ -24,6 +24,7 @@
     padding-top: 8rem
     padding-left: 24rem
   &__title
+    margin-top: 9.4rem
     margin-bottom: 3.6rem
     font-size: 27px
     line-height: 37px
@@ -33,32 +34,86 @@
     width: 100%
     max-width: 31rem
   &__options
+    margin-bottom: 7rem
     padding: 0
     list-style: none
-    font-family: 'Futura Demi', sans-serif
+    font-family: 'Futura', sans-serif
+    font-style: normal
+    font-weight: 500
     font-size: 1.55rem
     line-height: 1.2rem
     color: $light
+  &__description-col
+    margin-left: 0.6rem
   &__image-left-col
     margin-left: 31.9rem
   &__image-right-col
     margin-left: 0.4rem
+  &__link
+    text-decoration: none
+    color: $light
+    cursor: pointer
+    &:hover
+      cursor: pointer
+      color: $primary
+      border-bottom: 1px solid $primary
+    &--active
+      cursor: pointer
+      color: $primary
+      border-bottom: 1px solid $primary  
+  &__swiper
+    &-container
+      width: 340px
+      height: 242px
+    &-slide
+      width: 340px
+      height: 242px
+    &-image
+      display: block
+      max-width: 340px
+      max-height: 242px
+      width: auto
+      height: auto
+    &-button
+      &-prev, &-next
+        background-color: $primary !important 
+        border-radius: 50%
+        top: 50%
+        width: 36px
+        height: 36px
+      &-prev
+        background: url('../img/fantasy/arrow-left.svg') no-repeat center
+        margin-left: 1.1rem
+      &-next
+        background: url('../img/fantasy/arrow-right.svg') no-repeat center
+        left: 291px !important
 .options
   &__option
     margin-bottom: 2.38rem
 .left-col__image
   &--first
     position: absolute
-    top: -10.8rem
-    left: 39.5rem
+    top: -2.95rem
+    margin-left: -27.9rem
   &--second
     position: absolute
-    top: 31.8rem
-    left: 39.5rem
+    top: 39.8rem
+    margin-left: -27.9rem
 .right-col__image
   &--first
     position: absolute
-    top: -16rem
+    top: -8rem
   &--second
     position: absolute
-    top: 6.1rem
+    top: 14.1rem
+.mobile-fantasy__title
+    margin-top: 9.4rem
+    margin-bottom: 2.5rem
+    font-size: 1.84rem
+    line-height: 2.7rem
+    text-align: center
+    text-transform: uppercase
+    font-family: 'Yeseva One', sans-serif
+    color: $primary
+    width: 100%
+    max-width: 30rem

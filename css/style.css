@@ -425,6 +425,12 @@ div#controlPolicyCheckbox-error {
   margin-top: 3rem;
   margin-left: 18.3rem; }
 
+div#specialistPolicyCheckbox-error {
+  margin-top: 1.5rem; }
+
+.specialist__input-group > div.invalid {
+  margin-top: 3.5rem; }
+
 .header {
   position: fixed;
   left: 0;
@@ -861,7 +867,7 @@ img {
   margin-bottom: 3.75rem;
   position: relative; }
   .project__section-title {
-    margin-top: 3.5rem; }
+    margin-top: 8.2rem; }
     .project__section-title__heading {
       font-size: 1.43rem;
       margin-bottom: 0.9rem; }
@@ -1188,7 +1194,8 @@ img {
   display: none; }
 
 .footer__menu {
-  width: 70%;
+  width: 85%;
+  max-width: 1256px;
   margin: auto;
   padding-top: 3.3rem;
   padding-bottom: 3.6rem; }
@@ -1641,77 +1648,126 @@ img {
     border-radius: 50%;
     background: #E3B873 url("../img/specialist/piggy-bank.svg") no-repeat center; }
 
-.fantasy > .container {
-  width: 100%;
-  max-width: 100%; }
-
-.fantasy__desktop-container {
-  display: flex;
-  width: 100%;
-  background: #131313 url("../img/fantasy/fantasy-bg.png") no-repeat center;
+.fantasy {
   position: relative;
-  z-index: 1; }
-  .fantasy__desktop-container::before {
+  z-index: 1;
+  background: #131313 url("../img/fantasy/fantasy-bg.png") no-repeat center;
+  background-size: cover; }
+  .fantasy::before {
     content: '';
     position: absolute;
+    z-index: 0;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
-
-.fantasy__mobile-container {
-  display: none; }
-
-.fantasy__description_col {
-  margin-left: 5rem;
-  padding-top: 8rem;
-  padding-left: 24rem; }
-
-.fantasy__title {
-  margin-bottom: 3.6rem;
-  font-size: 27px;
-  line-height: 37px;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', sans-serif;
-  color: #E3B873;
-  width: 100%;
-  max-width: 31rem; }
-
-.fantasy__options {
-  padding: 0;
-  list-style: none;
-  font-family: 'Futura Demi', sans-serif;
-  font-size: 1.55rem;
-  line-height: 1.2rem;
-  color: #fff; }
-
-.fantasy__image-left-col {
-  margin-left: 31.9rem; }
-
-.fantasy__image-right-col {
-  margin-left: 0.4rem; }
+  .fantasy__desktop-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    z-index: 2; }
+  .fantasy__mobile-container {
+    display: none; }
+  .fantasy__description_col {
+    margin-left: 5rem;
+    padding-top: 8rem;
+    padding-left: 24rem; }
+  .fantasy__title {
+    margin-top: 9.4rem;
+    margin-bottom: 3.6rem;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', sans-serif;
+    color: #E3B873;
+    width: 100%;
+    max-width: 31rem; }
+  .fantasy__options {
+    margin-bottom: 7rem;
+    padding: 0;
+    list-style: none;
+    font-family: 'Futura', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.55rem;
+    line-height: 1.2rem;
+    color: #fff; }
+  .fantasy__description-col {
+    margin-left: 0.6rem; }
+  .fantasy__image-left-col {
+    margin-left: 31.9rem; }
+  .fantasy__image-right-col {
+    margin-left: 0.4rem; }
+  .fantasy__link {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer; }
+    .fantasy__link:hover {
+      cursor: pointer;
+      color: #E3B873;
+      border-bottom: 1px solid #E3B873; }
+    .fantasy__link--active {
+      cursor: pointer;
+      color: #E3B873;
+      border-bottom: 1px solid #E3B873; }
+  .fantasy__swiper-container {
+    width: 340px;
+    height: 242px; }
+  .fantasy__swiper-slide {
+    width: 340px;
+    height: 242px; }
+  .fantasy__swiper-image {
+    display: block;
+    max-width: 340px;
+    max-height: 242px;
+    width: auto;
+    height: auto; }
+  .fantasy__swiper-button-prev, .fantasy__swiper-button-next {
+    background-color: #E3B873 !important;
+    border-radius: 50%;
+    top: 50%;
+    width: 36px;
+    height: 36px; }
+  .fantasy__swiper-button-prev {
+    background: url("../img/fantasy/arrow-left.svg") no-repeat center;
+    margin-left: 1.1rem; }
+  .fantasy__swiper-button-next {
+    background: url("../img/fantasy/arrow-right.svg") no-repeat center;
+    left: 291px !important; }
 
 .options__option {
   margin-bottom: 2.38rem; }
 
 .left-col__image--first {
   position: absolute;
-  top: -10.8rem;
-  left: 39.5rem; }
+  top: -2.95rem;
+  margin-left: -27.9rem; }
 
 .left-col__image--second {
   position: absolute;
-  top: 31.8rem;
-  left: 39.5rem; }
+  top: 39.8rem;
+  margin-left: -27.9rem; }
 
 .right-col__image--first {
   position: absolute;
-  top: -16rem; }
+  top: -8rem; }
 
 .right-col__image--second {
   position: absolute;
-  top: 6.1rem; }
+  top: 14.1rem; }
+
+.mobile-fantasy__title {
+  margin-top: 9.4rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.84rem;
+  line-height: 2.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', sans-serif;
+  color: #E3B873;
+  width: 100%;
+  max-width: 30rem; }
 
 @media screen and (max-width: 1600px) {
   .col-40 {
@@ -1727,6 +1783,12 @@ img {
     font-size: 1.05rem; }
   .break {
     display: none; } }
+
+@media screen and (max-width: 1400px) {
+  .fantasy__image-right-col {
+    display: none; }
+  .specialist__button {
+    padding: 1.25rem 2.1rem; } }
 
 @media screen and (max-width: 1305px) {
   .title__name {
@@ -1755,7 +1817,13 @@ img {
   .swiper-slide__heading {
     font-size: 1.1rem; }
   .footer .anti-hero {
-    padding-bottom: 6rem; } }
+    padding-bottom: 6rem; }
+  .specialist__button {
+    padding: 1.25rem 2rem; } }
+
+@media screen and (max-width: 1220px) {
+  .specialist__actions {
+    margin-left: -7rem; } }
 
 @media screen and (max-width: 1130px) {
   .title__name {
@@ -1770,26 +1838,31 @@ img {
   .specialist__form {
     max-width: 45rem; }
   .specialist__button {
-    padding: 1.25rem 1.3rem; } }
+    padding: 1.25rem 0.8rem; } }
 
 @media screen and (max-width: 1080px) {
-  .team__section-title-heading {
-    font-size: 1.8rem;
-    margin-bottom: 1rem; }
-  .team__description {
-    max-width: 27rem;
-    font-size: 1.228rem;
-    margin-bottom: 6.6rem; }
-  .team__profile-wrap {
-    position: static;
-    left: 0;
-    width: 100%;
-    margin-left: 0; }
-  .team__profile {
-    position: relative;
-    margin-left: 3rem;
-    margin-bottom: 12.3rem;
-    max-width: 25rem; }
+  .team {
+    padding-bottom: 4rem; }
+    .team__section-title-heading {
+      font-size: 1.8rem;
+      margin-bottom: 1rem; }
+    .team__description {
+      max-width: 27rem;
+      font-size: 1.228rem;
+      margin-bottom: 6.6rem; }
+    .team__profile-wrap {
+      position: static;
+      left: 0;
+      width: 100%;
+      margin-left: 0; }
+    .team__profile {
+      position: relative;
+      margin-left: 3rem;
+      margin-bottom: 12.3rem;
+      max-width: 25rem; }
+    .team__postscriptum {
+      margin-top: 0;
+      color: #fff; }
   .card-wrap {
     display: flex;
     justify-content: center;
@@ -1860,6 +1933,8 @@ img {
       width: 3.2rem;
       height: 3.2rem;
       margin-right: 1.9rem; }
+    .footer__menu {
+      width: 92%; }
     .footer .anti-hero {
       margin-top: -20rem;
       background-image: none;
@@ -1871,11 +1946,16 @@ img {
         order: 2;
         margin-top: 3.4rem; }
   .loader {
-    height: 295px; } }
+    height: 295px; }
+  .clients {
+    margin-top: 2.7rem; }
+  #map {
+    width: 360px;
+    height: 295px !important; } }
 
 @media screen and (max-width: 1030px) {
   .specialist__button {
-    padding: 1.25rem 1rem; } }
+    padding: 1.25rem 0.6rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -1888,9 +1968,13 @@ img {
     cursor: default; }
   .button:hover, .phone:hover, .logo:hover {
     cursor: default; }
+  .types {
+    padding-bottom: 20rem; }
   .steps {
     display: none; }
   .project {
+    color: #fff;
+    background-color: #131313;
     padding-bottom: 50rem; }
   .team {
     padding-top: 2rem; }
@@ -1910,10 +1994,19 @@ img {
     max-width: 30rem;
     margin: auto;
     margin-top: 4rem; }
-  .fantasy__desktop-container {
-    display: none; }
-  .fantasy__mobile-container {
-    display: block; } }
+  .fantasy {
+    background-image: none;
+    background: #131313;
+    position: relative; }
+    .fantasy__desktop-container {
+      display: none; }
+    .fantasy__mobile-container {
+      display: block;
+      position: absolute;
+      max-width: 50vw;
+      top: -26.2rem;
+      left: 50%;
+      transform: translateX(-50%); } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1941,7 +2034,11 @@ img {
     height: 7.5rem; }
   .footer__api-map {
     margin-bottom: 11.9rem;
-    width: 100%; } }
+    width: 100%; }
+  .fantasy__mobile-container {
+    max-width: 89vw; }
+  .team {
+    padding-bottom: 13rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1982,7 +2079,7 @@ img {
   .project {
     background-color: #131313;
     padding-top: 2rem;
-    padding-bottom: 129rem;
+    padding-bottom: 134.5rem;
     margin-bottom: 0; }
     .project__description {
       color: #fff !important;
@@ -1990,13 +2087,34 @@ img {
       max-width: 50rem !important;
       line-height: 1.8rem !important;
       letter-spacing: 0.03rem; }
+    .project__section-title {
+      margin-top: 13.2rem; }
     .project__section-title > .section-title__heading {
       font-size: 1.8rem;
+      margin-bottom: 1.3rem;
       color: #fff; }
-  .types__section-title {
-    font-size: 1.2rem;
-    margin-bottom: 3.4rem;
-    margin-top: 6.3rem; }
+  .types {
+    padding-bottom: 16rem; }
+    .types__section-title {
+      font-size: 1.2rem;
+      margin-bottom: 3.4rem;
+      margin-top: 6.3rem; }
+      .types__section-title__heading {
+        font-size: 1.82rem;
+        margin-bottom: 1.4rem; }
+    .types__card__text {
+      margin-top: -12.6rem !important;
+      padding-top: 1.8rem !important;
+      padding-left: 3.1rem !important; }
+    .types__card__price-tag {
+      padding: 0.95rem 2.5rem !important; }
+    .types .row {
+      margin-left: -2rem;
+      width: 111%; }
+    .types__col-30 {
+      margin-bottom: 1.1rem !important; }
+  .fantasy__mobile-container {
+    max-width: 89vw; }
   .card__text {
     max-width: 22.8rem;
     margin-top: -13.1rem;
@@ -2024,17 +2142,22 @@ img {
   .project__container {
     width: 95%; }
   .project__description {
-    width: 79.5%; }
+    width: 84.5%;
+    margin-bottom: 3rem; }
   .project__row {
-    width: 83%;
+    width: 93%;
     margin: 0; }
   .project__card {
     margin-bottom: 6.2rem; }
+    .project__card-title {
+      color: #131313; }
   .project-card__text {
-    margin-top: -12.6rem;
+    margin-top: -12.1rem;
     padding-left: 2.4rem; }
   .project__col {
     margin-bottom: 0 !important; }
+  .project__section-title__image {
+    margin-bottom: 2rem; }
   .col-30 {
     margin-bottom: 1.3rem; }
   .col-40, .col-60 {
@@ -2088,10 +2211,12 @@ img {
     color: #fff; }
     .control > .container {
       width: 93%; }
-    .control__section-title__heading {
-      font-size: 1.8rem; }
-    .control__section-title-image {
-      margin-bottom: 3.4rem; }
+    .control__section-title {
+      margin-top: -28.6rem; }
+      .control__section-title__heading {
+        font-size: 1.8rem; }
+      .control__section-title-image {
+        margin-bottom: 3.4rem; }
     .control__video {
       min-height: 17.2rem;
       margin-bottom: 2.4rem; }

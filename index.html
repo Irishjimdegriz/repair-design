@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Lesson 27</title>
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -14,11 +14,11 @@
   <script src="js/lazysizes.min.js" async></script>
 </head>
 <body>
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/watch.js", "ym"); ym(64345651, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/64345651" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/watch.js", "ym"); ym(64345651, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/64345651" style="position:absolute; left:-9999px;" alt=""></div></noscript> <!-- /Yandex.Metrika counter -->
   <header class="header">
     <div class="container">
        <div class="menu">
-         <a href='./' class="logo menu__logo">Repair design project</a>
+         <a href="./" class="logo menu__logo">Repair design project</a>
          <!-- /.logo -->
          <nav class="nav menu__nav">
            <a href="#hero" class="nav__item">Главная</a>
@@ -30,7 +30,7 @@
          </nav>
          <div class="contacts menu__contacts">
            <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-           <button onclick="ym(64345651,'reachGoal','contact-button'); return true;" class="contact-button contacts__button button button--primary" data-toggle='modal'>Заказать звонок</button> 
+           <button onclick="ym(64345651,'reachGoal','contact-button'); return true;" class="contact-button contacts__button button button--primary" data-toggle="modal">Заказать звонок</button> 
          </div>
          <!-- /.contacts -->
        </div> 
@@ -47,8 +47,8 @@
         <div class="hero__content">
           <h1 class="title hero__title wow fadeInRight" data-wow-delay="0.1s">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-Дону</span></h1>
           <p class="hero__text wow fadeInRight" data-wow-delay="0.3s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-          <button class="button hero__button button--primary wow fadeInRight" data-toggle='modal' data-wow-delay="0.5s">Рассчитать стоимость</button>
-          <button class="button hero__button button--outline hero__button--wide wow fadeInRight" data-toggle='modal' data-wow-delay="0.5s">Оставить заявку</button>
+          <button class="button hero__button button--primary wow fadeInRight" data-toggle="modal" data-wow-delay="0.5s">Рассчитать стоимость</button>
+          <button class="button hero__button button--outline hero__button--wide wow fadeInRight" data-toggle="modal" data-wow-delay="0.5s">Оставить заявку</button>
         </div>
         <!-- /.hero__content -->
       </div>
@@ -57,11 +57,11 @@
       <a href="#" class="hero__scroll-down">листайте вниз</a>
     </section>
     <!-- /.hero -->
-    <section class="section section--dark projects">
+    <section class="section section--dark projects" id="projects">
       <div class="container">
         <div class="row">
           <div class="col-40">
-            <div class="section-title section-title--left ">
+            <div class="section-title section-title--left">
               <h2 class="section-title__heading section-title__heading--big section-title__heading--primary">Завершенные <span class="section-title__word">проекты</span></h2>
               <!-- /.section-title__heading -->
               <p class="section-title__text">
@@ -179,9 +179,9 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
                   <!-- Slides -->
-                  <div class="swiper-slide swiper-slide__image"><img class='swiper-image lazyload' data-src="img/finished/finished-1.jpg" alt="Finished 1"></div>
-                  <div class="swiper-slide swiper-slide__image"><img data-src="img/finished/finished-1.jpg" class="lazyload" alt="Finished 2"></div>
-                  <div class="swiper-slide swiper-slide__image"><img data-src="img/finished/finished-1.jpg" class="lazyload" alt="Finished 3"></div>
+                  <div class="swiper-slide swiper-slide__image"><img class="swiper-image lazyload" src="img/finished/finished-1.jpg" alt="Finished 1"></div>
+                  <div class="swiper-slide swiper-slide__image"><img src="img/finished/finished-1.jpg" class="lazyload" alt="Finished 2"></div>
+                  <div class="swiper-slide swiper-slide__image"><img src="img/finished/finished-1.jpg" class="lazyload" alt="Finished 3"></div>
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.section section--dark projects -->
+    <!-- /.section section-dark projects -->
     <section class="section control">
       <div class="container">
         <div class="section-title control__section-title section-title--light">
@@ -203,7 +203,7 @@
           <!-- /.section-title__image -->
         </div>
         <!-- /.section-title -->
-        <div class="control__video video" id='player'>
+        <div class="control__video video" id="player">
           <script src="https://www.youtube.com/iframe_api"></script>
           <img src="img/play.svg" alt="play icon" class="video__play">
         </div>
@@ -215,16 +215,16 @@
         <form action="send.php" method="POST" class="form control__form">
           <div class="control__input-group">
             <label for="control-user-name" class="label form__label control__label">Имя</label>
-            <input type="text" class="input form__input control__input input--dark" id="control-user-name" placeholder='Как вас зовут:' name="userName" >
+            <input type="text" class="input form__input control__input input--dark" id="control-user-name" placeholder="Как вас зовут:" name="userName">
           </div>
           <div class="control__input-group">
             <label for="control-user-phone" class="label form__label control__label">Телефон</label>
-            <input type="tel" class="input form__input control__input input--dark" id="control-user-phone" placeholder='Ваш номер телефона:' name="userPhone" > 
+            <input type="tel" class="input form__input control__input input--dark" id="control-user-phone" placeholder="Ваш номер телефона:" name="userPhone"> 
           </div>    
           <button class="button button--primary control__button">Отправить</button>
           <div class="policy control__policy">
-            <input type="checkbox" name='controlPolicyCheckbox' id='control-policy-checkbox' class='policy__checkbox' checked>
-            <label for="control-policy-checkbox" class='policy__label control__policy-label'>Я соглашаюсь с обработкой данных</label>
+            <input type="checkbox" name="controlPolicyCheckbox" id="control-policy-checkbox" class="policy__checkbox" checked="checked">
+            <label for="control-policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
           </div>
         </form>
       </div>
@@ -241,11 +241,11 @@
         </div>
         <!-- /.section-title -->
         <div class="row">
-          <div class="col-30">
+          <div class="col-30 types__col-30">
             <div class="card types__card">
-              <img data-src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image lazyload">
-              <div class="card__text">
-                <h3 class="card__title">Косметический ремонт</h3>
+              <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image lazyload">
+              <div class="card__text types__card__text">
+                <h3 class="card__title types__card__title">Косметический ремонт</h3>
                 <!-- /.card__title -->
                 <ul class="card__list">
                   <li class="card__item">Демонтаж старых покрытий</li>
@@ -258,18 +258,18 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__price-tag">от 900 руб / м<sup>2</sup></strong>
+                <strong class="card__price-tag types__card__price-tag">от 900 руб / м<sup>2</sup></strong>
                 <!-- /.card__price-tag -->
               </div>
             </div>
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col-30">
+          <div class="col-30 types__col-30">
             <div class="card types__card">
-              <img data-src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image lazyload">
-              <div class="card__text">
-                <h3 class="card__title">Капитальный ремонт</h3>
+              <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image lazyload">
+              <div class="card__text types__card__text">
+                <h3 class="card__title types__card__title">Капитальный ремонт</h3>
                 <!-- /.card__title -->
                 <ul class="card__list">
                   <li class="card__item">Демонтаж старых покрытий</li>
@@ -282,18 +282,18 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__price-tag">от 1800 руб / м<sup>2</sup></strong>
+                <strong class="card__price-tag types__card__price-tag">от 1800 руб / м<sup>2</sup></strong>
                 <!-- /.card__price-tag -->
               </div>
             </div>
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col-30">
+          <div class="col-30 types__col-30">
             <div class="card types__card">
-              <img data-src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image lazyload">
-              <div class="card__text">
-                <h3 class="card__title">Дизайнерский ремонт</h3>
+              <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image lazyload">
+              <div class="card__text types__card__text">
+                <h3 class="card__title types__card__title">Дизайнерский ремонт</h3>
                 <!-- /.card__title -->
                 <ul class="card__list">
                   <li class="card__item">Демонтаж старых покрытий</li>
@@ -306,7 +306,7 @@
                   <!-- /.card__item -->
                 </ul>
                 <!-- /.card__list -->
-                <strong class="card__price-tag">от 4000 руб / м<sup>2</sup></strong>
+                <strong class="card__price-tag types__card__price-tag">от 4000 руб / м<sup>2</sup></strong>
                 <!-- /.card__price-tag -->
               </div>
             </div>
@@ -318,7 +318,7 @@
       </div>
     </section>
     <!-- /.section /.types -->
-    <section class="section specialist">
+    <section class="section specialist" id="specialist">
       <div class="container">
         <ol class="actions specialist__actions">
           <li class="action actions__action action--first">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</li>
@@ -335,22 +335,22 @@
             <h3 class="specialist__title">Оставьте заявку на бесплатный выезд замерщика</h3>
             <div class="input-group specialist__input-group">
               <label for="specialist-user-name" class="label form__label label--light">Имя</label>
-              <input type="text" name="userName" class="input form__input specialist__input input--light" id="specialist-user-name" placeholder='Как вас зовут:'>
+              <input type="text" name="userName" class="input form__input specialist__input input--light" id="specialist-user-name" placeholder="Как вас зовут:">
             </div>
             <!-- /.input-group specialist__input-group -->
             <div class="input-group specialist__input-group">
               <label for="specialist-user-phone" class="label form__label label--light">Телефон</label>
-              <input type="tel" name="userPhone" class="input form__input specialist__input input--light" id="specialist-user-phone" placeholder='Ваш телефон:'>
+              <input type="tel" name="userPhone" class="input form__input specialist__input input--light" id="specialist-user-phone" placeholder="Ваш телефон:">
             </div>
             <!-- /.input-group specialist__input-group -->
             <div class="input-group specialist__input-group specialist__input-group--last">
               <label for="specialist-user-email" class="label form__label label--light">Email</label>
-              <input type="email" name="userEmail" class="input form__input specialist__input input--light" id="specialist-user-email" placeholder='Ваш email'>   
+              <input type="email" name="userEmail" class="input form__input specialist__input input--light" id="specialist-user-email" placeholder="Ваш email">   
             </div>
             <!-- /.input-group specialist__input-group -->   
             <div class="policy specialist__policy">
-              <input type="checkbox" name='specialistPolicyCheckbox' id='policy-checkbox' class='policy__checkbox' checked>
-              <label for="policy-checkbox" class='policy__label specialist__policy-label'>Я соглашаюсь с обработкой данных</label>
+              <input type="checkbox" name="specialistPolicyCheckbox" id="specialist-policy-checkbox" class="policy__checkbox" checked="checked">
+              <label for="specialist-policy-checkbox" class="policy__label specialist__policy-label">Я соглашаюсь с обработкой данных</label>
             </div>
             <button class="button button--primary specialist__button">Вызвать замерщика</button>
           </form>
@@ -369,39 +369,52 @@
           <div class="fantasy__description-col">
             <h2 class="fantasy__title">Мы реализуем ваши самые смелые фантазии</h2>
             <ul class="options fantasy__options">
-              <li class="options__option active">Американская классика</li>
-              <li class="options__option">Имперский стиль</li>
-              <li class="options__option">Классика</li>
-              <li class="options__option">Лофт</li>
-              <li class="options__option">Минимализм</li>
-              <li class="options__option">Прованс</li>
-              <li class="options__option">Романтизм</li>
-              <li class="options__option">Скандинавский стиль</li>
-              <li class="options__option">Средиземноморский стиль</li>
-              <li class="options__option">Хайтек</li>
-              <li class="options__option">Эклектизм</li>
+              <li class="options__option active"><a class="fantasy__link">Американская классика</a></li>
+              <li class="options__option"><a class="fantasy__link">Имперский стиль</a></li>
+              <li class="options__option"><a class="fantasy__link">Классика</a></li>
+              <li class="options__option"><a class="fantasy__link">Лофт</a></li>
+              <li class="options__option"><a class="fantasy__link">Минимализм</a></li>
+              <li class="options__option"><a class="fantasy__link">Прованс</a></li>
+              <li class="options__option"><a class="fantasy__link">Романтизм</a></li>
+              <li class="options__option"><a class="fantasy__link">Скандинавский стиль</a></li>
+              <li class="options__option"><a class="fantasy__link">Средиземноморский стиль</a></li>
+              <li class="options__option"><a class="fantasy__link">Хайтек</a></li>
+              <li class="options__option"><a class="fantasy__link">Эклектизм</a></li>
             </ul>
           </div>
           <div class="fantasy__image-left-col">
             <div class="left-col__image left-col__image--first">
-              <img src="../img/fantasy/fantasy-1.jpg" alt="">
+              <img class="lazyload" src="img/fantasy/fantasy-1.jpg" alt="fantasy 1">
             </div>
             <div class="left-col__image left-col__image--second">
-              <img src="../img/fantasy/fantasy-2.jpg" alt="">
+              <img class="lazyload" src="img/fantasy/fantasy-2.jpg" alt="fantasy 2">
             </div>
           </div>
           <div class="fantasy__image-right-col">
               <div class="right-col__image right-col__image--first">
-                <img src="../img/fantasy/fantasy-3.jpg" alt="">
+                <img class="lazyload" src="img/fantasy/fantasy-3.jpg" alt="fantasy 3">
               </div>
               <div class="right-col__image right-col__image--second">
-                <img src="../img/fantasy/fantasy-4.jpg" alt="">
+                <img class="lazyload" src="img/fantasy/fantasy-4.jpg" alt="fantasy 4">
               </div>
           </div>
         </div>
         <!-- /.desktop-container -->
         <div class="mobile-container fantasy__mobile-container">
-          <!-- слайдер с кастомными кнопками -->
+          <h2 class="mobile-fantasy__title">Мы реализуем ваши самые смелые фантазии</h2>
+          <div class="swiper-container fantasy__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide fantasy__swiper-slide"><img class="fantasy__swiper-image" src="img/fantasy/fantasy-bg.png" alt=""></div>
+                <div class="swiper-slide fantasy__swiper-slide"><img class="fantasy__swiper-image" src="img/fantasy/fantasy-bg.png" alt=""></div>
+                <div class="swiper-slide fantasy__swiper-slide"><img class="fantasy__swiper-image" src="img/fantasy/fantasy-bg.png" alt=""></div>
+                <div class="swiper-slide fantasy__swiper-slide"><img class="fantasy__swiper-image" src="img/fantasy/fantasy-bg.png" alt=""></div>
+            </div>        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev fantasy__swiper-button-prev"></div>
+            <div class="swiper-button-next fantasy__swiper-button-next"></div>
+        </div>
         </div>
         <!-- /.mobile-container -->
       </div>
@@ -412,8 +425,8 @@
         <div class="section-title project__section-title">
           <h2 class="section-title__heading project__section-title__heading">Дизайн проект</h2>
           <!-- /.section-title__heading -->
-          <div class="section-title__image">
-            <img data-src="img/project-tools.svg" class="lazyload" alt="project">
+          <div class="section-title__image project__section-title__image">
+            <img src="img/project-tools.svg" class="lazyload" alt="project">
           </div>
           <!-- /.section-title__image -->
         </div>
@@ -424,7 +437,7 @@
         <div class="row project__row">
           <div class="col-30 project__col">
             <div class="card project__card">
-              <img data-src="img/projects/project-1.jpg" alt="Минимальный" class="card__image lazyload">
+              <img src="img/projects/project-1.jpg" alt="Минимальный" class="card__image lazyload">
               <div class="card__text project-card__text">
                 <h3 class="card__title project__card-title">Минимальный</h3>
                 <!-- /.card__title -->
@@ -447,7 +460,7 @@
           </div>
           <div class="col-30 project__col">
             <div class="card project__card">
-              <img data-src="img/projects/project-2.jpg" alt="Стандартный" class="card__image lazyload">
+              <img src="img/projects/project-2.jpg" alt="Стандартный" class="card__image lazyload">
               <div class="card__text project-card__text">
                 <h3 class="card__title project__card-title">Стандартный</h3>
                 <!-- /.card__title -->
@@ -476,7 +489,7 @@
           </div>
           <div class="col-30 project__col">
             <div class="card project__card">
-              <img data-src="img/projects/project-3.jpg" alt="Полный" class="card__image lazyload">
+              <img src="img/projects/project-3.jpg" alt="Полный" class="card__image lazyload">
               <div class="card__text project-card__text">
                 <h3 class="card__title project__card-title">Полный</h3>
                 <!-- /.card__title -->
@@ -523,7 +536,7 @@
         <div class="row steps__row">
           <div class="steps__col-left">
             <div class="section-title section-title--left steps__section-title">
-              <p class='section-title__subtitle steps__subtitle'>как мы работаем</p>
+              <p class="section-title__subtitle steps__subtitle">как мы работаем</p>
               <h2 class="section-title__heading section-title__heading--very-big section-title__heading--primary">6 шагов <span class="section-title__word section-title__word-right-pad">до цели</span></h2>
               <!-- /.section-title__heading -->
             </div>
@@ -535,7 +548,7 @@
                     <p class="counter swiper-steps-slide__counter">1/6</p>
                     <h3 class="swiper-steps-slide__heading swiper-steps-slide__heading--very-small">Выезд на замеры<br>помещения</h3>
                     <!-- /.swiper-slide__heading -->
-                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p  class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
+                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
                     <!-- /.swiper-slide__value -->
                 </div>
                 <!-- /.swiper-slide__text --></div>
@@ -544,7 +557,7 @@
                     <p class="counter swiper-steps-slide__counter">2/6</p>
                     <h3 class="swiper-steps-slide__heading swiper-steps-slide__heading--very-small">Составление<br>сметы</h3>
                     <!-- /.swiper-slide__heading -->
-                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p  class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
+                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
                     <!-- /.swiper-slide__value -->
                   </div>
                 </div>
@@ -553,7 +566,7 @@
                     <p class="counter swiper-steps-slide__counter">3/6</p>
                     <h3 class="swiper-steps-slide__heading swiper-steps-slide__heading--very-small">Разработка<br>дизайн проекта</h3>
                     <!-- /.swiper-slide__heading -->
-                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p  class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
+                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
                     <!-- /.swiper-slide__value -->
                   </div>
                 </div>
@@ -562,7 +575,7 @@
                     <p class="counter swiper-steps-slide__counter">4/6</p>
                     <h3 class="swiper-steps-slide__heading swiper-steps-slide__heading--very-small">Закупка расходных<br>материалов</h3>
                     <!-- /.swiper-slide__heading -->
-                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p  class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
+                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
                     <!-- /.swiper-slide__value -->
                   </div>
                 </div>
@@ -571,7 +584,7 @@
                     <p class="counter swiper-steps-slide__counter">5/6</p>
                     <h3 class="swiper-steps-slide__heading swiper-steps-slide__heading--very-small">Ремонтно-отделочные<br>работы</h3>
                     <!-- /.swiper-slide__heading -->
-                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p  class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
+                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
                     <!-- /.swiper-slide__value -->
                   </div>
                 </div>
@@ -580,7 +593,7 @@
                     <p class="counter swiper-steps-slide__counter">6/6</p>
                     <h3 class="swiper-steps-slide__heading swiper-steps-slide__heading--very-small">Приемка-сдача<br>работ</h3>
                     <!-- /.swiper-slide__heading -->
-                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p  class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
+                    <p class="swiper-steps-slide__value swiper-steps-slide__value--first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей <br>квартиры. Во время нашей встречи вы можете задать <br>абсолютно любые вопросы, касаемо ремонта.</p>  <p class="swiper-steps-slide__value">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники<br> ремонта, дизайна квартиры, сроков ремонта <br>квартиры в целом и отдельных ее этапов.</p> 
                     <!-- /.swiper-slide__value -->
                   </div>
                 </div>
@@ -598,12 +611,12 @@
               <!-- Add Pagination -->
               <div class="swiper-pagination swiper-steps-right-pagination"></div>
               <div class="swiper-wrapper swiper-steps-right-wrapper swiper-no-swiping">
-                <div class="swiper-slide swiper-slide-right__image"><img class='swiper-image-right' src="img/steps/step-1.jpg" alt="Finished 1"></div>
-                <div class="swiper-slide swiper-slide-right__image"><img class='swiper-image-right' src="img/steps/step-2.jpg" alt="Finished 2"></div>
-                <div class="swiper-slide swiper-slide-right__image"><img class='swiper-image-right' src="img/steps/step-3.jpg" alt="Finished 3"></div>
-                <div class="swiper-slide swiper-slide-right__image"><img class='swiper-image-right' src="img/steps/step-4.jpg" alt="Finished 4"></div>
-                <div class="swiper-slide swiper-slide-right__image"><img class='swiper-image-right' src="img/steps/step-5.jpg" alt="Finished 5"></div>
-                <div class="swiper-slide swiper-slide-right__image"><img class='swiper-image-right' src="img/steps/step-6.jpg" alt="Finished 6"></div>
+                <div class="swiper-slide swiper-slide-right__image"><img class="swiper-image-right" src="img/steps/step-1.jpg" alt="Finished 1"></div>
+                <div class="swiper-slide swiper-slide-right__image"><img class="swiper-image-right" src="img/steps/step-2.jpg" alt="Finished 2"></div>
+                <div class="swiper-slide swiper-slide-right__image"><img class="swiper-image-right" src="img/steps/step-3.jpg" alt="Finished 3"></div>
+                <div class="swiper-slide swiper-slide-right__image"><img class="swiper-image-right" src="img/steps/step-4.jpg" alt="Finished 4"></div>
+                <div class="swiper-slide swiper-slide-right__image"><img class="swiper-image-right" src="img/steps/step-5.jpg" alt="Finished 5"></div>
+                <div class="swiper-slide swiper-slide-right__image"><img class="swiper-image-right" src="img/steps/step-6.jpg" alt="Finished 6"></div>
               </div>
             </div>
           </div>
@@ -620,7 +633,7 @@
           <h2 class="section-title__heading team__section-title-heading">Наша команда</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image team__section-title-image">
-            <img data-src="img/team.svg" alt="project" class="lazyload">
+            <img src="img/team.svg" alt="project" class="lazyload">
           </div>
           <!-- /.section-title__image -->
         </div>
@@ -632,10 +645,10 @@
           <div class="card-wrap">
             <div class="profile team__profile">
               <div class="profile__image-wrap image-wrap">
-                <img data-src="img/team/person-1.jpg" alt="" class="profile__image lazyload">
+                <img src="img/team/person-1.jpg" alt="" class="profile__image lazyload">
               </div>
               <div class="profile__logo-wrap logo-wrap">
-                <img data-src="img/idea.svg" alt="" class="profile__logo lazyload">
+                <img src="img/idea.svg" alt="" class="profile__logo lazyload">
               </div>
               <div class="profile__title">
                 <div class="title-wrap--light">
@@ -650,7 +663,7 @@
             <!-- /.team__profile -->
             <div class="profile team__profile">
               <div class="profile__image-wrap image-wrap">
-                <img data-src="img/team/person-2.jpg" alt="" class="profile__image lazyload">
+                <img src="img/team/person-2.jpg" alt="" class="profile__image lazyload">
               </div>
               <div class="profile__logo-wrap logo-wrap">
                 <img src="img/pen.svg" alt="" class="profile__logo">
@@ -668,10 +681,10 @@
             <!-- /.team__profile -->
             <div class="profile team__profile">
               <div class="profile__image-wrap image-wrap">
-                <img data-src="img/team/person-3.jpg" alt="" class="profile__image lazyload">
+                <img src="img/team/person-3.jpg" alt="" class="profile__image lazyload">
               </div>
               <div class="profile__logo-wrap logo-wrap">
-                <img data-src="img/portfolio.svg" alt="" class="profile__logo lazyload">
+                <img src="img/portfolio.svg" alt="" class="profile__logo lazyload">
               </div>
               <div class="profile__title">
                 <div class="title-wrap--light">
@@ -693,14 +706,14 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.section team section--dark -->
+    <!-- /.section team section-dark -->
     <section class="section clients" id="clients">
       <div class="container">
         <div class="section-title clients__section-title">
           <h2 class="section-title__heading clients__section-title__heading">Наши клиенты</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image clients__section-title-image">
-            <img data-src="img/clients.svg" class="lazyload" alt="camera">
+            <img src="img/clients.svg" class="lazyload" alt="camera">
           </div>
           <!-- /.section-title__image -->
         </div>
@@ -711,18 +724,18 @@
           <div class="review">
             <div class="client-info review__client-info">
               <div class="review-image-wrap">
-                <img class="review-image lazyload" data-src="img/customers/customer-1.jpg" alt="">
+                <img class="review-image lazyload" src="img/customers/customer-1.jpg" alt="">
               </div>
               <p class="review-title">Савельева Екатерина Львовна</p>
             </div>
             <p class="review-text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. <br class="break">Я рекомендую этих мастеров.</p>
             <div class="review-info">
               <div class="review-data">
-                <img class="review-data__image lazyload" data-src="img/square.svg" alt="">
+                <img class="review-data__image lazyload" src="img/square.svg" alt="">
                 <p class="review-data__info">40 м<sup>2</sup></p>
               </div>
               <div class="review-data">
-                <img class="review-data__image lazyload" data-src="img/duration.svg" alt="">
+                <img class="review-data__image lazyload" src="img/duration.svg" alt="">
                 <p class="review-data__info duration">48 дней</p>
               </div>
             </div>
@@ -730,18 +743,18 @@
           <div class="review">
             <div class="client-info review__client-info">
               <div class="review-image-wrap">
-                <img class="review-image lazyload" data-src="img/customers/customer-2.jpg" alt="">
+                <img class="review-image lazyload" src="img/customers/customer-2.jpg" alt="">
               </div>
               <p class="review-title">Большов Михаил Анатольевич</p>
             </div>
             <p class="review-text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. <br class="break">Я рекомендую этих мастеров.</p>
             <div class="review-info">
               <div class="review-data">
-                <img class="review-data__image lazyload" data-src="img/square.svg" alt="">
+                <img class="review-data__image lazyload" src="img/square.svg" alt="">
                 <p class="review-data__info">90 м<sup>2</sup></p>
               </div>
               <div class="review-data">
-                <img class="review-data__image lazyload" data-src="img/duration.svg" alt="">
+                <img class="review-data__image lazyload" src="img/duration.svg" alt="">
                 <p class="review-data__info duration">128 дней</p>
               </div>
             </div>
@@ -749,18 +762,18 @@
           <div class="review">
             <div class="client-info review__client-info">
               <div class="review-image-wrap">
-                <img class="review-image lazyload" data-src="img/customers/customer-3.jpg" alt="">
+                <img class="review-image lazyload" src="img/customers/customer-3.jpg" alt="">
               </div>
               <p class="review-title">Хасанов Даниил Муратович</p>
             </div>
             <p class="review-text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. <br class="break">Цены демократические.</p>
             <div class="review-info">
               <div class="review-data">
-                <img class="review-data__image lazyload" data-src="img/square.svg" alt="">
+                <img class="review-data__image lazyload" src="img/square.svg" alt="">
                 <p class="review-data__info">56 м<sup>2</sup></p>
               </div>
               <div class="review-data">
-                <img class="review-data__image lazyload" data-src="img/duration.svg" alt="">
+                <img class="review-data__image lazyload" src="img/duration.svg" alt="">
                 <p class="review-data__info duration">86 дней</p>
               </div>
             </div>
@@ -775,24 +788,24 @@
     <div class="container">
       <div class="anti-hero">
         <div class="footer-wrap" id="footer">
-          <h3 class="footer__title footer-response">Ваша заявка отправлена! Также вы можете подписаться на нашу <a class="response-link"  href="https://vk.com/glo_academy">группу вконтакте</a></h3>
+          <h3 class="footer__title footer-response">Ваша заявка отправлена! Также вы можете подписаться на нашу <a class="response-link" href="https://vk.com/glo_academy">группу вконтакте</a></h3>
           <h3 class="footer__title">Остались вопросы?</h3>
           <form action="send.php" method="POST" class="form footer__form">
             <div class="input-group footer__input-group">
               <label for="footer-user-name" class="label form__label footer__label label--light">Имя</label>
-              <input type="text" class="input form__input footer__input input--light" id="footer-user-name" placeholder='Как вас зовут:' name="userName" >
+              <input type="text" class="input form__input footer__input input--light" id="footer-user-name" placeholder="Как вас зовут:" name="userName">
             </div>
             <div class="input-group footer__input-group">
               <label for="footer-user-phone" class="label form__label footer__label label--light">Телефон</label>
-              <input type="tel" class="input form__input footer__input input--light" id="footer-user-phone" placeholder='Ваш номер телефона:' name="userPhone" >
+              <input type="tel" class="input form__input footer__input input--light" id="footer-user-phone" placeholder="Ваш номер телефона:" name="userPhone">
             </div>
             <div class="input-group footer__input-group footer__input-group--full-width">
               <label for="footer-user-question" class="label form__label footer__label label--light">Вопрос</label>
-              <input type="text" class="input form__input footer__input input--light" id="footer-user-question" placeholder='Я хочу спросить:' name="userQuestion" >  
+              <input type="text" class="input form__input footer__input input--light" id="footer-user-question" placeholder="Я хочу спросить:" name="userQuestion">  
             </div>    
             <div class="policy footer__policy policy--center">
-              <input type="checkbox" name='footerPolicyCheckbox' id='footer-policy-checkbox' class='policy__checkbox' checked>
-              <label for="footer-policy-checkbox" class='policy__label footer__policy-label policy__label--center'>Я соглашаюсь с обработкой данных</label>
+              <input type="checkbox" name="footerPolicyCheckbox" id="footer-policy-checkbox" class="policy__checkbox" checked="checked">
+              <label for="footer-policy-checkbox" class="policy__label footer__policy-label policy__label--center">Я соглашаюсь с обработкой данных</label>
             </div>
             <button class="button button--primary footer__button">Отправить</button>
           </form>
@@ -804,10 +817,10 @@
           </div>
           <div class="footer__logo-container">
             <div class="footer__logo-wrap logo-wrap">
-              <img data-src="img/mail.svg" alt="" class="footer__logo lazyload">
+              <img src="img/mail.svg" alt="" class="footer__logo lazyload">
             </div>
             <div class="footer__logo-wrap logo-wrap">
-              <img data-src="img/instagram.svg" alt="" class="footer__logo lazyload">
+              <img src="img/instagram.svg" alt="" class="footer__logo lazyload">
             </div>
           </div>
         </div>
@@ -821,7 +834,7 @@
         </div> -->
       </div>
       <div class="menu footer__menu">
-        <a href='./' class="logo menu__logo">Repair design project</a>
+        <a href="./" class="logo menu__logo">Repair design project</a>
         <!-- /.logo -->
         <nav class="nav menu__nav">
           <a href="#" class="nav__item">Главная</a>
@@ -833,44 +846,44 @@
         </nav>
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-          <button class="contacts__button button button--primary" data-toggle='modal'>Заказать звонок</button> 
+          <button class="contacts__button button button--primary" data-toggle="modal">Заказать звонок</button> 
         </div>
         <!-- /.contacts -->
       </div> 
       <!-- /.menu -->
     </div>
   </footer>
-  <div class='modal'>
-    <div class='modal__dialog'>
+  <div class="modal">
+    <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оcтавьте заявку и наш менеджер свяжется с вами</h3>
       <h3 class="modal__title modal-response">Ваша заявка отправлена! Также вы можете подписаться на нашу <a class="response-link" href="https://vk.com/glo_academy">группу вконтакте</a></h3>
       <form action="send.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
           <label for="modal-user-name" class="label form__label label--light">Имя</label>
-          <input type="text" name="userName" class="input form__input modal__input input--light" id="modal-user-name" placeholder='Как вас зовут:'>
+          <input type="text" name="userName" class="input form__input modal__input input--light" id="modal-user-name" placeholder="Как вас зовут:">
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="input-group modal__input-group">
           <label for="modal-user-phone" class="label form__label label--light">Телефон</label>
-          <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="modal-user-phone" placeholder='Ваш номер телефона:'>
+          <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="modal-user-phone" placeholder="Ваш номер телефона:">
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="input-group modal__input-group modal__input-group--last">
           <label for="modal-user-email" class="label form__label label--light">Email</label>
-          <input type="email" name="userEmail" class="input form__input modal__input input--light" id="modal-user-email" placeholder='Ваш email'>   
+          <input type="email" name="userEmail" class="input form__input modal__input input--light" id="modal-user-email" placeholder="Ваш email">   
         </div>
         <!-- /.input-group modal__input-group -->   
         <div class="policy modal__policy">
-          <input type="checkbox" name='modalPolicyCheckbox' id='policy-checkbox' class='policy__checkbox' checked>
-          <label for="policy-checkbox" class='policy__label modal__policy-label'>Я соглашаюсь с обработкой данных</label>
+          <input type="checkbox" name="modalPolicyCheckbox" id="policy-checkbox" class="policy__checkbox" checked="checked">
+          <label for="policy-checkbox" class="policy__label modal__policy-label">Я соглашаюсь с обработкой данных</label>
         </div>
         <button class="button button--primary modal__button">Отправить заявку</button>
       </form>
     </div>
   </div>
-  <div class='modal-accept'>
-    <div class='modal__dialog'>
+  <div class="modal-accept">
+    <div class="modal__dialog">
       <button class="modal-accept__close"></button>
       <h3 class="modal__title">Ваша заявка принята! С вами свяжутся в течение 15-ти минут</h3>
     </div>
