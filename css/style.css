@@ -1034,7 +1034,8 @@ img {
   .steps__col-right {
     width: 70%;
     padding-left: 6.1rem;
-    padding-top: 6.1rem; }
+    padding-top: 6.1rem;
+    margin-bottom: -15.4rem; }
   .steps__subtitle {
     font-size: 1.07rem !important;
     margin-bottom: -0.4rem; }
@@ -2315,7 +2316,7 @@ img {
   .swiper-slide__text:nth-of-type(2n) {
     padding-left: 0rem; }
   .project {
-    padding-bottom: 139.5rem; } }
+    padding-bottom: 141.5rem; } }
 
 @media screen and (max-width: 400px) {
   .control__button {
