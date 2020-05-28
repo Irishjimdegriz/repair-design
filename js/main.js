@@ -11,9 +11,14 @@ $(document).ready(function () {
         acceptCloseBtn = $('.modal-accept__close'),
         modalResponse = $('.modal-response'),
         videoPlay = $('.video__play'),
-        fantasyLinks = $('.fantasy__link');
+        fantasyLinks = $('.fantasy__link'),
+        map = $('#map');
 
 let activeLink; 
+
+  map.on('click', () => {
+    map.removeClass('shade');
+  });
 
   fantasyLinks.on('click', (event) => {
     fantasyLinks.each(function() {

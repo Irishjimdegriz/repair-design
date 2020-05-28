@@ -482,7 +482,8 @@ div#specialistPolicyCheckbox-error {
   margin-left: 0.7rem; }
 
 .col-40 {
-  width: 40%; }
+  width: 40%;
+  padding-bottom: 4rem; }
 
 .col-50 {
   width: 50%; }
@@ -907,11 +908,33 @@ img {
 .hidden {
   display: none; }
 
+.project__swiper-slide__image {
+  position: relative;
+  height: 0;
+  padding-bottom: 69.25%; }
+
+.swiper-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center; }
+
 .projects {
   padding-top: 7.53rem;
   padding-bottom: 24.5rem; }
   .projects > .container {
     width: 86%; }
+  .projects__swiper-slide-image {
+    text-align: center;
+    vertical-align: middle; }
+
+.swiper-image {
+  display: block; }
 
 .modal {
   opacity: 0;
@@ -1189,7 +1212,7 @@ img {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background: url("../img/yandex-before-load-marker.png") #ffffff no-repeat;
+  background: url("../img/yandex-before-load-marker-bw.png") #ffffff no-repeat;
   background-position: center center;
   background-size: cover; }
 
@@ -1289,6 +1312,13 @@ img {
   height: 465px !important;
   cursor: pointer;
   background-color: transparent; }
+  #map:hover {
+    -webkit-filter: none !important;
+    filter: none !important; }
+
+.shade {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%); }
 
 @-webkit-keyframes rotation {
   from {
@@ -1782,10 +1812,6 @@ img {
   color: #E3B873;
   width: 100%;
   max-width: 30rem; }
-
-@media screen and (max-width: 1600px) {
-  .col-40 {
-    padding-bottom: 4rem; } }
 
 @media screen and (max-width: 1480px) {
   .title__name {
