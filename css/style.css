@@ -1026,7 +1026,7 @@ img {
 
 .steps {
   padding-top: 29.5rem;
-  padding-bottom: 5rem; }
+  padding-bottom: 17rem; }
   .steps > .container {
     width: 86.7%; }
   .steps__col-left {
@@ -1654,7 +1654,7 @@ img {
 .fantasy {
   position: relative;
   z-index: 1;
-  background: #131313 url("../img/fantasy/fantasy-bg.png") no-repeat center;
+  background: #131313 url("../img/fantasy/fantasy-bg.jpg") no-repeat center;
   background-size: cover; }
   .fantasy::before {
     content: '';

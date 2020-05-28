@@ -183,8 +183,6 @@ let activeLink;
       }
     })
 
-    new WOW().init();
-
     $('.modal__form').validate({
       errorClass: 'invalid',
       errorElement: "div",
