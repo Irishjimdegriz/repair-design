@@ -1783,24 +1783,6 @@ img {
 .options__option {
   margin-bottom: 2.38rem; }
 
-.left-col__image--first {
-  position: absolute;
-  top: -2.95rem;
-  margin-left: -27.9rem; }
-
-.left-col__image--second {
-  position: absolute;
-  top: 39.8rem;
-  margin-left: -27.9rem; }
-
-.right-col__image--first {
-  position: absolute;
-  top: -8rem; }
-
-.right-col__image--second {
-  position: absolute;
-  top: 14.1rem; }
-
 .mobile-fantasy__title {
   margin-top: 9.4rem;
   margin-bottom: 2.5rem;
@@ -1813,6 +1795,38 @@ img {
   width: 100%;
   max-width: 30rem; }
 
+.fantasy-desktop__swiper-slide {
+  position: relative;
+  overflow: visible; }
+
+.fantasy__description-col {
+  width: 39%; }
+
+.fantasy-desktop__swiper {
+  width: 60%;
+  height: 100rem;
+  margin-top: -10rem;
+  position: absolute;
+  left: 35.8rem; }
+
+.left-col__image--first {
+  position: absolute;
+  top: 7rem; }
+
+.left-col__image--second {
+  position: absolute;
+  top: 49.5rem; }
+
+.right-col__image--first {
+  position: absolute;
+  top: 1.9rem;
+  left: 28.1rem; }
+
+.right-col__image--second {
+  position: absolute;
+  top: 24.1rem;
+  left: 28.1rem; }
+
 @media screen and (max-width: 1480px) {
   .title__name {
     padding-top: 1.171rem;
@@ -1822,11 +1836,11 @@ img {
   .title__job {
     font-size: 1.05rem; }
   .break {
+    display: none; }
+  .right-col__image {
     display: none; } }
 
 @media screen and (max-width: 1400px) {
-  .fantasy__image-right-col {
-    display: none; }
   .specialist__button {
     padding: 1.25rem 2.1rem; }
   .specialist__actions {
@@ -1865,7 +1879,7 @@ img {
   .fantasy {
     padding-bottom: 5rem; }
   .left-col__image--second {
-    top: 45.8rem; } }
+    top: 57.8rem; } }
 
 @media screen and (max-width: 1130px) {
   .title__name {
@@ -2030,7 +2044,7 @@ img {
   .project {
     background-color: #131313;
     padding-top: 6rem;
-    padding-bottom: 154rem; }
+    padding-bottom: 162rem; }
     .project__section-title, .project__description {
       color: #fff; }
     .project__row {
