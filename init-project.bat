@@ -1,6 +1,8 @@
-call npm i --save-dev gulp
-call npm i --save-dev browser-sync
-call npm i --save-dev gulp-cssmin
-call npm i -D sass-css
-call npm i --save-dev gulp-autoprefixer
+call npm i -d gulp
+call npm i -d browser-sync
+call npm i -d sass-css
+call npm i -d gulp-autoprefixer
+call npm i -d gulp-clean-css
+call npm i -d gulp-minify
+call npm i -d gulp-htmlmin
 call npm init
