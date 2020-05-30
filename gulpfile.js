@@ -57,7 +57,6 @@ function buildHTML(done) {
 
 function PHP(done) {
   src('**.php')
-  //.pipe(htmlMin({collapsewhitespace: true}))
   .pipe(dest('dist/'));
 
   src('phpmailer/**/**')
@@ -68,7 +67,6 @@ function PHP(done) {
 
 function fonts(done) {
   src('fonts/**/**')
-  //.pipe(htmlMin({collapsewhitespace: true}))
   .pipe(dest('dist/fonts'));
 
   done();
