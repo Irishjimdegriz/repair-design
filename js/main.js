@@ -20,15 +20,6 @@ let activeLink;
     map.removeClass('shade');
   });
 
-  fantasyLinks.on('click', (event) => {
-    fantasyLinks.each(function() {
-      $(this).removeClass('fantasy__link--active');
-    })
-    let target = $(event.target);
-    target.addClass('fantasy__link--active');
-    activeLink = target;
-  });
-
   const switchModal = () => {
     modal.toggleClass('modal--visible');
     modalResponse.removeClass('modal--visible');
@@ -187,6 +178,23 @@ let activeLink;
         noSwiping: true
       }
     })
+
+    let swiperFantasyDesktop = new Swiper ('.fantasy-desktop__swiper', {
+      loop: true,
+      swiping: {
+        noSwiping: true
+      }
+    })
+    
+    fantasyLinks.on('click', (event) => {
+      fantasyLinks.each(function() {
+        $(this).removeClass('fantasy__link--active');
+      })
+      let target = $(event.target);
+      target.addClass('fantasy__link--active');
+      activeLink = target;
+      swiperFantasyDesktop.slideTo(fantasyLinks.index(target));
+    });
 
     $('.modal__form').validate({
       errorClass: 'invalid',
